@@ -78,6 +78,11 @@ def local_css(file_name):
     with open(file_name, encoding="utf-8") as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
+# Force reload by adding a version number to the filename if checking externally, 
+# but here we read the file content directly so it should update on refresh.
+# To be doubly sure, we can inject a comment with a timestamp to force a change.
+import time
+st.markdown(f"<!-- CSS Updated: {time.time()} -->", unsafe_allow_html=True)
 local_css("styles.css")
 
 
