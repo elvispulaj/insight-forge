@@ -1,0 +1,501 @@
+Date,Region,Product,Category,Sales_Rep,Revenue,Units_Sold,Discount_Pct,Customer_Satisfaction,Deal_Size,Cost,Profit,Profit_Margin
+2023-01-01 00:00:00.000000000,Europe,Enterprise Suite,Software,Rep_015,3093.35,27,4.2,4.4,Small,1658.82,1434.53,46.4
+2023-01-02 11:06:36.793587174,Middle East,Enterprise Suite,Services,Rep_015,38506.16,46,18.7,4.4,Small,20165.06,18341.1,47.6
+2023-01-03 22:13:13.587174348,Asia Pacific,Enterprise Suite,Software,Rep_006,2497.13,64,23.4,3.3,Small,1699.09,798.04,32.0
+2023-01-05 09:19:50.380761523,Europe,IoT Gateway,Software,Rep_012,1646.65,91,17.3,4.0,Medium,782.59,864.06,52.5
+2023-01-06 20:26:27.174348697,North America,Security Pro,Services,Rep_020,18330.44,51,4.4,3.8,Medium,7994.53,10335.91,56.4
+2023-01-08 07:33:03.967935871,North America,IoT Gateway,Software,Rep_018,32512.43,50,24.3,4.7,Medium,18706.45,13805.98,42.5
+2023-01-09 18:39:40.761523046,North America,Security Pro,Services,Rep_014,4714.08,6,19.1,4.3,Large,3256.47,1457.61,30.9
+2023-01-11 05:46:17.555110220,Latin America,IoT Gateway,Software,Rep_002,4801.75,59,11.6,4.1,Large,2464.99,2336.76,48.7
+2023-01-12 16:52:54.348697394,Asia Pacific,IoT Gateway,Subscriptions,Rep_009,11373.62,15,20.2,3.2,Enterprise,4761.12,6612.5,58.1
+2023-01-14 03:59:31.142284569,Asia Pacific,Data Analytics,Software,Rep_005,3465.38,30,7.8,4.2,Small,1738.9,1726.48,49.8
+2023-01-15 15:06:07.935871743,North America,IoT Gateway,Subscriptions,Rep_020,3171.45,42,10.4,3.2,Medium,1749.94,1421.51,44.8
+2023-01-17 02:12:44.729458917,Middle East,Cloud Platform,Services,Rep_001,23283.75,37,27.5,3.7,Small,10444.55,12839.2,55.1
+2023-01-18 13:19:21.523046092,Latin America,Data Analytics,Software,Rep_003,16790.31,42,8.7,3.3,Small,10031.05,6759.26,40.3
+2023-01-20 00:25:58.316633266,North America,IoT Gateway,Hardware,Rep_006,39080.96,35,14.1,4.4,Small,27330.29,11750.67,30.1
+2023-01-21 11:32:35.110220440,North America,Enterprise Suite,Subscriptions,Rep_005,1802.43,87,26.7,3.4,Small,965.24,837.19,46.4
+2023-01-22 22:39:11.903807615,North America,Cloud Platform,Hardware,Rep_005,4433.95,6,21.2,3.8,Medium,2245.43,2188.52,49.4
+2023-01-24 09:45:48.697394789,North America,Cloud Platform,Software,Rep_001,11355.02,68,1.9,4.8,Large,5907.01,5448.01,48.0
+2023-01-25 20:52:25.490981963,Europe,Cloud Platform,Hardware,Rep_017,2668.46,18,4.4,3.4,Small,1159.56,1508.9,56.5
+2023-01-27 07:59:02.284569138,Europe,Data Analytics,Hardware,Rep_019,17501.2,73,0.2,4.0,Large,11637.98,5863.22,33.5
+2023-01-28 19:05:39.078156312,North America,IoT Gateway,Services,Rep_014,35226.45,29,18.9,3.8,Medium,18474.43,16752.02,47.6
+2023-01-30 06:12:15.871743487,Asia Pacific,IoT Gateway,Services,Rep_012,4023.75,77,13.4,3.0,Small,2076.99,1946.76,48.4
+2023-01-31 17:18:52.665330661,North America,Enterprise Suite,Hardware,Rep_010,8487.17,59,4.0,4.6,Medium,5074.54,3412.63,40.2
+2023-02-02 04:25:29.458917835,North America,Enterprise Suite,Software,Rep_020,46478.37,47,28.7,3.1,Small,24754.85,21723.52,46.7
+2023-02-03 15:32:06.252505010,Europe,Cloud Platform,Services,Rep_018,70201.57,17,15.9,3.9,Medium,41732.73,28468.84,40.6
+2023-02-05 02:38:43.046092184,Europe,Enterprise Suite,Hardware,Rep_011,19830.2,96,7.3,4.1,Medium,8297.63,11532.57,58.2
+2023-02-06 13:45:19.839679358,Asia Pacific,Data Analytics,Software,Rep_002,16516.5,22,15.0,4.3,Small,10638.56,5877.94,35.6
+2023-02-08 00:51:56.633266533,North America,IoT Gateway,Subscriptions,Rep_018,2908.86,68,20.4,4.4,Small,1984.28,924.58,31.8
+2023-02-09 11:58:33.426853707,Europe,Cloud Platform,Services,Rep_007,12469.63,69,2.3,3.5,Medium,7414.81,5054.82,40.5
+2023-02-10 23:05:10.220440881,Europe,Enterprise Suite,Services,Rep_015,15806.63,37,8.2,3.0,Enterprise,10849.19,4957.44,31.4
+2023-02-12 10:11:47.014028056,North America,Data Analytics,Services,Rep_011,6295.28,49,24.2,4.4,Small,2804.1,3491.18,55.5
+2023-02-13 21:18:23.807615230,Asia Pacific,Data Analytics,Hardware,Rep_018,3969.0,13,13.8,4.1,Large,2156.06,1812.94,45.7
+2023-02-15 08:25:00.601202404,North America,Enterprise Suite,Services,Rep_012,1741.4,34,16.4,4.7,Medium,1010.96,730.44,41.9
+2023-02-16 19:31:37.394789579,North America,IoT Gateway,Hardware,Rep_006,1006.99,86,13.0,4.6,Enterprise,578.54,428.45,42.5
+2023-02-18 06:38:14.188376753,Middle East,Enterprise Suite,Software,Rep_020,782.54,53,1.3,4.7,Large,407.26,375.28,48.0
+2023-02-19 17:44:50.981963927,Middle East,Cloud Platform,Hardware,Rep_013,16241.6,87,5.0,4.0,Medium,8143.95,8097.65,49.9
+2023-02-21 04:51:27.775551102,Latin America,Enterprise Suite,Hardware,Rep_020,9674.41,51,13.4,3.7,Medium,4237.85,5436.56,56.2
+2023-02-22 15:58:04.569138276,North America,Data Analytics,Services,Rep_016,4534.3,3,6.3,4.6,Large,2346.6,2187.7,48.2
+2023-02-24 03:04:41.362725451,North America,Enterprise Suite,Software,Rep_018,5443.91,42,1.5,3.9,Small,2443.22,3000.69,55.1
+2023-02-25 14:11:18.156312625,Asia Pacific,IoT Gateway,Software,Rep_010,10431.28,98,25.3,3.4,Small,6470.62,3960.66,38.0
+2023-02-27 01:17:54.949899799,Europe,Security Pro,Software,Rep_008,6651.01,32,29.4,4.7,Small,3077.08,3573.93,53.7
+2023-02-28 12:24:31.743486974,North America,Enterprise Suite,Software,Rep_018,1621.87,51,23.8,4.8,Large,677.24,944.63,58.2
+2023-03-01 23:31:08.537074148,Europe,IoT Gateway,Services,Rep_001,24236.14,85,25.6,3.9,Large,13710.62,10525.52,43.4
+2023-03-03 10:37:45.330661322,North America,IoT Gateway,Software,Rep_008,11672.04,46,7.3,3.2,Small,6753.08,4918.96,42.1
+2023-03-04 21:44:22.124248497,Latin America,Data Analytics,Services,Rep_006,11148.7,21,28.8,3.8,Medium,7375.69,3773.01,33.8
+2023-03-06 08:50:58.917835671,North America,IoT Gateway,Hardware,Rep_005,22138.54,44,5.9,4.6,Medium,12687.48,9451.06,42.7
+2023-03-07 19:57:35.711422845,Asia Pacific,IoT Gateway,Hardware,Rep_015,3052.22,11,28.5,4.8,Small,1537.23,1514.99,49.6
+2023-03-09 07:04:12.505010020,North America,IoT Gateway,Services,Rep_015,34768.87,68,29.8,3.4,Enterprise,22283.49,12485.38,35.9
+2023-03-10 18:10:49.298597194,Europe,IoT Gateway,Hardware,Rep_002,6849.62,1,21.4,3.1,Small,3850.06,2999.56,43.8
+2023-03-12 05:17:26.092184368,Europe,Cloud Platform,Services,Rep_001,23536.76,92,29.4,4.8,Small,9974.5,13562.26,57.6
+2023-03-13 16:24:02.885771543,North America,Cloud Platform,Hardware,Rep_011,19561.9,63,17.1,3.8,Medium,11145.49,8416.41,43.0
+2023-03-15 03:30:39.679358717,Middle East,Data Analytics,Software,Rep_010,2329.57,24,7.8,4.1,Large,1566.42,763.15,32.8
+2023-03-16 14:37:16.472945892,Asia Pacific,Enterprise Suite,Subscriptions,Rep_018,14816.26,99,13.1,4.9,Small,7688.07,7128.19,48.1
+2023-03-18 01:43:53.266533066,Middle East,IoT Gateway,Software,Rep_018,11986.42,13,17.8,3.1,Medium,5860.13,6126.29,51.1
+2023-03-19 12:50:30.060120240,Latin America,Enterprise Suite,Software,Rep_017,8403.25,98,2.2,4.3,Medium,3722.98,4680.27,55.7
+2023-03-20 23:57:06.853707415,Europe,Enterprise Suite,Services,Rep_008,7235.49,11,18.7,3.1,Small,3222.93,4012.56,55.5
+2023-03-22 11:03:43.647294589,Middle East,Data Analytics,Software,Rep_015,7309.49,51,29.4,3.8,Small,3872.8,3436.69,47.0
+2023-03-23 22:10:20.440881763,North America,IoT Gateway,Services,Rep_008,21487.51,17,5.7,4.6,Medium,12434.91,9052.6,42.1
+2023-03-25 09:16:57.234468938,North America,IoT Gateway,Hardware,Rep_017,16211.77,99,23.8,3.9,Small,6876.78,9334.99,57.6
+2023-03-26 20:23:34.028056112,North America,Security Pro,Subscriptions,Rep_012,8404.94,82,27.2,5.0,Enterprise,5731.08,2673.86,31.8
+2023-03-28 07:30:10.821643286,North America,Enterprise Suite,Services,Rep_008,1352.45,86,28.3,4.1,Large,847.36,505.09,37.3
+2023-03-29 18:36:47.615230461,Europe,Enterprise Suite,Services,Rep_014,14666.66,24,28.8,3.6,Enterprise,8447.81,6218.85,42.4
+2023-03-31 05:43:24.408817635,North America,Cloud Platform,Subscriptions,Rep_004,19309.19,19,15.6,3.4,Small,12522.62,6786.57,35.1
+2023-04-01 16:50:01.202404809,Latin America,Security Pro,Software,Rep_001,128090.47,37,29.3,3.7,Enterprise,54317.54,73772.93,57.6
+2023-04-03 03:56:37.995991984,Europe,Cloud Platform,Subscriptions,Rep_001,29452.08,85,22.7,3.7,Medium,15994.0,13458.08,45.7
+2023-04-04 15:03:14.789579158,North America,Cloud Platform,Software,Rep_019,829.64,8,4.9,3.1,Small,488.68,340.96,41.1
+2023-04-06 02:09:51.583166332,Europe,Cloud Platform,Hardware,Rep_016,8902.75,28,14.3,3.7,Small,5774.29,3128.46,35.1
+2023-04-07 13:16:28.376753507,North America,Data Analytics,Software,Rep_014,71228.62,5,21.5,3.9,Small,45233.08,25995.54,36.5
+2023-04-09 00:23:05.170340681,Latin America,Data Analytics,Hardware,Rep_016,17124.38,17,7.4,4.4,Medium,8273.14,8851.24,51.7
+2023-04-10 11:29:41.963927855,North America,Cloud Platform,Software,Rep_005,12020.67,36,19.2,4.3,Medium,8201.27,3819.4,31.8
+2023-04-11 22:36:18.757515030,Middle East,Security Pro,Services,Rep_009,23867.53,19,20.0,4.4,Small,10437.36,13430.17,56.3
+2023-04-13 09:42:55.551102204,Asia Pacific,Enterprise Suite,Services,Rep_002,3839.69,64,4.9,3.0,Medium,2543.95,1295.74,33.7
+2023-04-14 20:49:32.344689378,North America,Security Pro,Subscriptions,Rep_018,14381.64,91,17.0,3.4,Small,9941.77,4439.87,30.9
+2023-04-16 07:56:09.138276552,North America,IoT Gateway,Software,Rep_006,5999.54,98,23.1,4.3,Medium,2718.67,3280.87,54.7
+2023-04-17 19:02:45.931863728,Latin America,Data Analytics,Services,Rep_009,7914.5,11,15.0,4.0,Small,4880.24,3034.26,38.3
+2023-04-19 06:09:22.725450902,Asia Pacific,Enterprise Suite,Hardware,Rep_001,21897.89,54,0.4,3.0,Large,9023.81,12874.08,58.8
+2023-04-20 17:15:59.519038076,Asia Pacific,Enterprise Suite,Software,Rep_009,2664.96,45,0.3,4.6,Large,1390.11,1274.85,47.8
+2023-04-22 04:22:36.312625250,Asia Pacific,IoT Gateway,Software,Rep_016,38009.03,47,10.7,4.5,Medium,21090.64,16918.39,44.5
+2023-04-23 15:29:13.106212424,North America,IoT Gateway,Hardware,Rep_013,4878.66,12,27.8,4.1,Small,2801.3,2077.36,42.6
+2023-04-25 02:35:49.899799598,Europe,Cloud Platform,Services,Rep_009,11078.87,21,6.9,3.1,Small,7542.29,3536.58,31.9
+2023-04-26 13:42:26.693386774,North America,Data Analytics,Hardware,Rep_013,1509.28,11,19.0,4.5,Large,908.1,601.18,39.8
+2023-04-28 00:49:03.486973948,Latin America,Data Analytics,Hardware,Rep_009,19221.88,92,6.7,4.2,Small,10464.07,8757.81,45.6
+2023-04-29 11:55:40.280561122,Asia Pacific,Security Pro,Software,Rep_011,45972.78,5,9.7,4.6,Small,29556.02,16416.76,35.7
+2023-04-30 23:02:17.074148296,North America,Cloud Platform,Software,Rep_004,4369.61,81,25.4,4.5,Small,2993.88,1375.73,31.5
+2023-05-02 10:08:53.867735470,North America,Cloud Platform,Software,Rep_002,2138.23,56,21.9,4.6,Medium,869.45,1268.78,59.3
+2023-05-03 21:15:30.661322644,North America,Cloud Platform,Subscriptions,Rep_006,11311.55,20,2.9,4.0,Medium,7858.77,3452.78,30.5
+2023-05-05 08:22:07.454909820,North America,Cloud Platform,Software,Rep_014,46433.33,41,12.9,3.3,Large,19773.15,26660.18,57.4
+2023-05-06 19:28:44.248496994,Asia Pacific,Data Analytics,Software,Rep_004,1422.5,46,0.9,4.3,Small,916.54,505.96,35.6
+2023-05-08 06:35:21.042084168,Asia Pacific,Data Analytics,Software,Rep_006,2148.3,12,14.4,4.2,Small,1039.99,1108.31,51.6
+2023-05-09 17:41:57.835671342,Latin America,Cloud Platform,Services,Rep_019,4698.38,70,19.9,4.5,Large,2065.66,2632.72,56.0
+2023-05-11 04:48:34.629258516,Europe,Security Pro,Subscriptions,Rep_006,3027.79,17,3.6,3.3,Large,1610.65,1417.14,46.8
+2023-05-12 15:55:11.422845690,North America,Enterprise Suite,Services,Rep_002,3039.28,19,8.7,3.4,Small,1802.86,1236.42,40.7
+2023-05-14 03:01:48.216432866,Asia Pacific,Enterprise Suite,Services,Rep_018,656.59,26,11.9,4.8,Medium,337.67,318.92,48.6
+2023-05-15 14:08:25.010020040,Asia Pacific,Security Pro,Hardware,Rep_013,16430.07,48,27.6,4.5,Small,6840.98,9589.09,58.4
+2023-05-17 01:15:01.803607214,Europe,Cloud Platform,Software,Rep_009,12166.78,52,29.8,4.8,Enterprise,7054.77,5112.01,42.0
+2023-05-18 12:21:38.597194388,Asia Pacific,Data Analytics,Subscriptions,Rep_019,1055.09,96,1.3,4.5,Small,707.67,347.42,32.9
+2023-05-19 23:28:15.390781562,Europe,Enterprise Suite,Services,Rep_013,46566.42,70,22.8,4.2,Enterprise,23980.06,22586.36,48.5
+2023-05-21 10:34:52.184368736,Europe,IoT Gateway,Services,Rep_011,60919.63,55,11.2,4.3,Medium,28321.53,32598.1,53.5
+2023-05-22 21:41:28.977955912,Europe,IoT Gateway,Services,Rep_001,3290.89,75,11.8,4.8,Medium,1753.3,1537.59,46.7
+2023-05-24 08:48:05.771543086,North America,Security Pro,Services,Rep_007,32854.97,33,22.6,4.2,Small,13618.67,19236.3,58.5
+2023-05-25 19:54:42.565130260,North America,Cloud Platform,Services,Rep_015,4074.09,62,27.6,4.3,Medium,2632.46,1441.63,35.4
+2023-05-27 07:01:19.358717434,North America,Enterprise Suite,Subscriptions,Rep_001,10070.24,88,28.5,3.3,Medium,6524.53,3545.71,35.2
+2023-05-28 18:07:56.152304608,Asia Pacific,Cloud Platform,Subscriptions,Rep_012,2972.28,23,17.3,3.9,Small,1713.22,1259.06,42.4
+2023-05-30 05:14:32.945891784,North America,Enterprise Suite,Services,Rep_007,115508.78,15,10.7,4.4,Medium,58439.46,57069.32,49.4
+2023-05-31 16:21:09.739478958,Europe,Security Pro,Services,Rep_015,5680.41,27,23.6,3.5,Enterprise,3635.09,2045.32,36.0
+2023-06-02 03:27:46.533066132,Latin America,Security Pro,Software,Rep_019,9430.82,75,7.5,3.4,Medium,5341.67,4089.15,43.4
+2023-06-03 14:34:23.326653306,North America,IoT Gateway,Services,Rep_001,3549.19,64,16.9,3.6,Large,2299.09,1250.1,35.2
+2023-06-05 01:41:00.120240480,Europe,Cloud Platform,Software,Rep_017,75627.76,81,10.8,3.5,Small,44577.85,31049.91,41.1
+2023-06-06 12:47:36.913827654,Asia Pacific,IoT Gateway,Hardware,Rep_017,77958.94,51,19.7,3.4,Medium,49529.0,28429.94,36.5
+2023-06-07 23:54:13.707414830,North America,Cloud Platform,Subscriptions,Rep_003,57360.72,53,7.2,3.8,Small,33244.49,24116.23,42.0
+2023-06-09 11:00:50.501002004,North America,IoT Gateway,Hardware,Rep_012,25533.04,78,5.7,4.8,Medium,13385.5,12147.54,47.6
+2023-06-10 22:07:27.294589178,North America,Data Analytics,Hardware,Rep_006,3828.59,91,27.5,4.0,Enterprise,2631.71,1196.88,31.3
+2023-06-12 09:14:04.088176352,North America,Data Analytics,Software,Rep_011,21882.01,82,3.1,3.4,Medium,12305.0,9577.01,43.8
+2023-06-13 20:20:40.881763526,Middle East,Data Analytics,Software,Rep_003,8034.89,92,15.2,3.2,Small,4672.5,3362.39,41.8
+2023-06-15 07:27:17.675350700,Latin America,Data Analytics,Services,Rep_008,39139.61,51,6.6,4.4,Small,18244.78,20894.83,53.4
+2023-06-16 18:33:54.468937876,Asia Pacific,Enterprise Suite,Software,Rep_014,30917.65,47,1.2,3.8,Medium,18170.16,12747.49,41.2
+2023-06-18 05:40:31.262525050,Latin America,Data Analytics,Software,Rep_014,3717.78,4,1.1,4.6,Medium,2124.65,1593.13,42.9
+2023-06-19 16:47:08.056112224,Latin America,Security Pro,Hardware,Rep_010,25270.45,7,5.3,4.3,Large,11509.46,13760.99,54.5
+2023-06-21 03:53:44.849699398,North America,Security Pro,Services,Rep_002,18369.4,35,26.0,4.6,Large,7676.13,10693.27,58.2
+2023-06-22 15:00:21.643286572,Latin America,Enterprise Suite,Services,Rep_014,290.54,48,8.5,3.5,Medium,168.89,121.65,41.9
+2023-06-24 02:06:58.436873746,Europe,Data Analytics,Software,Rep_009,21186.6,73,28.5,4.4,Small,13328.65,7857.95,37.1
+2023-06-25 13:13:35.230460922,Latin America,Data Analytics,Hardware,Rep_003,4826.35,72,17.4,3.5,Small,2688.38,2137.97,44.3
+2023-06-27 00:20:12.024048096,Latin America,Data Analytics,Hardware,Rep_008,2798.25,45,13.1,4.9,Small,1309.67,1488.58,53.2
+2023-06-28 11:26:48.817635270,North America,IoT Gateway,Services,Rep_016,2945.66,81,17.4,4.3,Small,1767.27,1178.39,40.0
+2023-06-29 22:33:25.611222444,North America,Cloud Platform,Services,Rep_002,6889.19,81,15.5,3.6,Medium,2921.24,3967.95,57.6
+2023-07-01 09:40:02.404809618,North America,IoT Gateway,Software,Rep_006,14415.68,97,22.8,3.5,Medium,7677.07,6738.61,46.7
+2023-07-02 20:46:39.198396792,Europe,Cloud Platform,Hardware,Rep_012,1574.11,96,8.5,3.4,Medium,706.79,867.32,55.1
+2023-07-04 07:53:15.991983968,Latin America,Data Analytics,Hardware,Rep_005,10176.31,72,10.6,4.4,Small,4633.66,5542.65,54.5
+2023-07-05 18:59:52.785571142,Latin America,Data Analytics,Subscriptions,Rep_002,16189.36,19,26.8,3.4,Small,7458.25,8731.11,53.9
+2023-07-07 06:06:29.579158316,North America,IoT Gateway,Hardware,Rep_016,75672.26,63,28.4,4.2,Small,39047.8,36624.46,48.4
+2023-07-08 17:13:06.372745490,Europe,IoT Gateway,Hardware,Rep_005,2226.02,38,26.8,3.5,Small,924.57,1301.45,58.5
+2023-07-10 04:19:43.166332664,Europe,Cloud Platform,Hardware,Rep_015,5326.58,67,12.6,4.3,Large,2766.3,2560.28,48.1
+2023-07-11 15:26:19.959919840,North America,Security Pro,Hardware,Rep_012,11092.18,59,23.4,4.6,Small,6139.66,4952.52,44.6
+2023-07-13 02:32:56.753507014,North America,Cloud Platform,Services,Rep_004,32108.99,69,14.3,4.6,Medium,17499.02,14609.97,45.5
+2023-07-14 13:39:33.547094188,North America,IoT Gateway,Hardware,Rep_015,5624.75,13,14.9,4.5,Small,2895.82,2728.93,48.5
+2023-07-16 00:46:10.340681362,Middle East,IoT Gateway,Services,Rep_011,34144.94,47,6.1,3.4,Large,22253.76,11891.18,34.8
+2023-07-17 11:52:47.134268536,North America,Enterprise Suite,Services,Rep_016,792.48,61,17.7,3.2,Medium,351.54,440.94,55.6
+2023-07-18 22:59:23.927855710,Europe,IoT Gateway,Hardware,Rep_006,1800.79,31,5.6,4.4,Small,993.51,807.28,44.8
+2023-07-20 10:06:00.721442886,Asia Pacific,Enterprise Suite,Hardware,Rep_014,12312.54,80,9.9,3.7,Medium,5154.18,7158.36,58.1
+2023-07-21 21:12:37.515030060,Europe,Security Pro,Subscriptions,Rep_018,1490.71,96,25.7,3.9,Large,628.11,862.6,57.9
+2023-07-23 08:19:14.308617234,Middle East,Cloud Platform,Hardware,Rep_012,1979.57,22,6.2,3.1,Enterprise,1132.63,846.94,42.8
+2023-07-24 19:25:51.102204408,Middle East,Cloud Platform,Hardware,Rep_011,4301.28,93,2.1,3.5,Small,2450.89,1850.39,43.0
+2023-07-26 06:32:27.895791582,North America,Enterprise Suite,Subscriptions,Rep_013,20449.77,86,2.1,3.1,Large,13566.58,6883.19,33.7
+2023-07-27 17:39:04.689378756,Europe,Cloud Platform,Software,Rep_011,832.84,43,28.2,4.8,Enterprise,472.52,360.32,43.3
+2023-07-29 04:45:41.482965932,North America,IoT Gateway,Software,Rep_016,9940.36,67,15.2,3.5,Enterprise,6838.34,3102.02,31.2
+2023-07-30 15:52:18.276553104,North America,Data Analytics,Software,Rep_015,27988.72,54,12.3,4.1,Medium,11604.36,16384.36,58.5
+2023-08-01 02:58:55.070140280,North America,Enterprise Suite,Subscriptions,Rep_015,6412.89,10,24.3,3.1,Medium,2753.71,3659.18,57.1
+2023-08-02 14:05:31.863727456,Asia Pacific,Cloud Platform,Software,Rep_004,5205.15,42,25.1,4.3,Medium,2150.87,3054.28,58.7
+2023-08-04 01:12:08.657314628,Europe,Enterprise Suite,Software,Rep_011,13123.05,64,10.0,3.6,Large,5978.64,7144.41,54.4
+2023-08-05 12:18:45.450901804,North America,Enterprise Suite,Software,Rep_019,6434.74,21,20.8,4.8,Medium,3618.78,2815.96,43.8
+2023-08-06 23:25:22.244488976,North America,Data Analytics,Software,Rep_015,42984.71,80,23.1,4.8,Medium,25518.8,17465.91,40.6
+2023-08-08 10:31:59.038076152,Latin America,IoT Gateway,Software,Rep_004,2135.18,76,19.6,3.7,Medium,883.27,1251.91,58.6
+2023-08-09 21:38:35.831663324,North America,Enterprise Suite,Hardware,Rep_013,7616.16,66,4.5,4.8,Large,5207.86,2408.3,31.6
+2023-08-11 08:45:12.625250500,North America,Cloud Platform,Hardware,Rep_019,10371.57,41,26.3,5.0,Large,6769.0,3602.57,34.7
+2023-08-12 19:51:49.418837676,Europe,Security Pro,Software,Rep_002,5145.38,24,16.2,4.7,Small,2516.01,2629.37,51.1
+2023-08-14 06:58:26.212424848,Middle East,Enterprise Suite,Software,Rep_014,258.39,35,8.5,4.7,Large,109.34,149.05,57.7
+2023-08-15 18:05:03.006012024,North America,Enterprise Suite,Software,Rep_004,6680.27,56,12.8,3.5,Medium,3012.58,3667.69,54.9
+2023-08-17 05:11:39.799599196,Asia Pacific,Data Analytics,Software,Rep_016,23866.05,30,1.1,4.2,Large,10455.32,13410.73,56.2
+2023-08-18 16:18:16.593186372,Asia Pacific,IoT Gateway,Hardware,Rep_020,20614.11,57,3.8,3.1,Medium,9008.06,11606.05,56.3
+2023-08-20 03:24:53.386773548,North America,Security Pro,Services,Rep_014,12403.5,94,23.0,3.2,Small,6890.99,5512.51,44.4
+2023-08-21 14:31:30.180360720,Asia Pacific,Cloud Platform,Software,Rep_015,2170.18,47,0.0,5.0,Enterprise,1028.13,1142.05,52.6
+2023-08-23 01:38:06.973947896,Europe,Security Pro,Hardware,Rep_003,13021.69,35,12.5,3.7,Small,6607.75,6413.94,49.3
+2023-08-24 12:44:43.767535068,Asia Pacific,Cloud Platform,Software,Rep_008,4071.94,19,15.7,4.5,Large,2837.54,1234.4,30.3
+2023-08-25 23:51:20.561122244,Asia Pacific,IoT Gateway,Subscriptions,Rep_016,12384.23,8,1.6,4.6,Medium,7496.1,4888.13,39.5
+2023-08-27 10:57:57.354709420,Europe,Cloud Platform,Services,Rep_010,9375.04,26,29.2,4.7,Medium,6419.04,2956.0,31.5
+2023-08-28 22:04:34.148296592,North America,Data Analytics,Hardware,Rep_004,2510.78,71,6.8,5.0,Small,1111.69,1399.09,55.7
+2023-08-30 09:11:10.941883768,Latin America,Data Analytics,Software,Rep_018,2776.8,30,9.1,3.5,Medium,1429.06,1347.74,48.5
+2023-08-31 20:17:47.735470940,North America,Data Analytics,Subscriptions,Rep_002,12407.13,7,9.1,3.1,Small,7027.64,5379.49,43.4
+2023-09-02 07:24:24.529058116,North America,Data Analytics,Software,Rep_017,6214.65,67,6.9,3.8,Small,2628.97,3585.68,57.7
+2023-09-03 18:31:01.322645288,North America,Security Pro,Software,Rep_013,2956.21,65,0.0,3.3,Small,1186.2,1770.01,59.9
+2023-09-05 05:37:38.116232464,Europe,IoT Gateway,Software,Rep_004,2677.41,36,21.9,3.0,Small,1609.47,1067.94,39.9
+2023-09-06 16:44:14.909819640,Asia Pacific,Cloud Platform,Software,Rep_011,5627.4,25,29.0,3.7,Enterprise,3334.49,2292.91,40.7
+2023-09-08 03:50:51.703406812,North America,Cloud Platform,Subscriptions,Rep_007,53195.32,37,6.7,4.6,Enterprise,27833.74,25361.58,47.7
+2023-09-09 14:57:28.496993988,Europe,Data Analytics,Services,Rep_012,4310.06,1,19.9,4.1,Small,2357.14,1952.92,45.3
+2023-09-11 02:04:05.290581160,North America,Data Analytics,Software,Rep_010,7967.9,15,22.3,3.6,Large,4180.22,3787.68,47.5
+2023-09-12 13:10:42.084168336,Asia Pacific,Enterprise Suite,Hardware,Rep_007,9154.25,37,25.5,4.3,Small,3727.62,5426.63,59.3
+2023-09-14 00:17:18.877755512,North America,IoT Gateway,Subscriptions,Rep_013,2085.51,13,12.7,3.5,Medium,1044.03,1041.48,49.9
+2023-09-15 11:23:55.671342684,Asia Pacific,Security Pro,Subscriptions,Rep_007,977.11,8,9.1,3.0,Large,442.75,534.36,54.7
+2023-09-16 22:30:32.464929860,Europe,Cloud Platform,Services,Rep_017,2363.81,5,9.8,4.5,Enterprise,1015.32,1348.49,57.0
+2023-09-18 09:37:09.258517032,Middle East,Enterprise Suite,Subscriptions,Rep_010,10899.73,60,21.4,4.2,Medium,7488.29,3411.44,31.3
+2023-09-19 20:43:46.052104208,North America,Enterprise Suite,Subscriptions,Rep_010,8998.36,73,24.5,4.5,Large,5217.32,3781.04,42.0
+2023-09-21 07:50:22.845691380,North America,Cloud Platform,Services,Rep_004,18824.0,1,5.4,3.1,Small,11644.47,7179.53,38.1
+2023-09-22 18:56:59.639278556,North America,Security Pro,Software,Rep_020,9100.64,36,11.1,4.7,Enterprise,4501.26,4599.38,50.5
+2023-09-24 06:03:36.432865732,Middle East,Enterprise Suite,Hardware,Rep_004,7104.91,35,27.1,4.2,Small,3679.95,3424.96,48.2
+2023-09-25 17:10:13.226452904,Latin America,Enterprise Suite,Services,Rep_007,3925.25,66,24.2,4.1,Medium,1849.1,2076.15,52.9
+2023-09-27 04:16:50.020040080,North America,IoT Gateway,Software,Rep_001,23424.27,63,29.5,4.2,Medium,10051.11,13373.16,57.1
+2023-09-28 15:23:26.813627252,Asia Pacific,Security Pro,Services,Rep_012,2689.16,23,22.6,4.7,Medium,1220.1,1469.06,54.6
+2023-09-30 02:30:03.607214428,Latin America,Enterprise Suite,Software,Rep_013,2137.77,9,11.8,4.2,Small,1366.58,771.19,36.1
+2023-10-01 13:36:40.400801604,Europe,Security Pro,Software,Rep_010,16001.96,34,17.7,4.2,Enterprise,9653.4,6348.56,39.7
+2023-10-03 00:43:17.194388776,Europe,Cloud Platform,Software,Rep_015,1636.33,46,19.8,5.0,Small,923.02,713.31,43.6
+2023-10-04 11:49:53.987975952,North America,Data Analytics,Software,Rep_013,146935.53,78,2.4,4.5,Medium,79716.49,67219.04,45.7
+2023-10-05 22:56:30.781563124,North America,Enterprise Suite,Subscriptions,Rep_009,8919.47,4,16.3,3.9,Small,6036.08,2883.39,32.3
+2023-10-07 10:03:07.575150300,Latin America,IoT Gateway,Services,Rep_009,12301.63,30,21.3,4.4,Small,5189.08,7112.55,57.8
+2023-10-08 21:09:44.368737472,Latin America,Cloud Platform,Services,Rep_015,3071.42,95,5.0,3.8,Medium,1487.12,1584.3,51.6
+2023-10-10 08:16:21.162324648,Asia Pacific,Security Pro,Services,Rep_010,5550.72,75,23.4,3.5,Medium,2803.01,2747.71,49.5
+2023-10-11 19:22:57.955911824,North America,Cloud Platform,Software,Rep_010,4855.62,99,17.5,4.2,Small,3082.0,1773.62,36.5
+2023-10-13 06:29:34.749498996,North America,Enterprise Suite,Hardware,Rep_008,4229.33,72,28.6,4.9,Small,2951.03,1278.3,30.2
+2023-10-14 17:36:11.543086172,Asia Pacific,Security Pro,Hardware,Rep_016,17318.91,3,1.3,4.9,Medium,8178.01,9140.9,52.8
+2023-10-16 04:42:48.336673344,Latin America,Data Analytics,Hardware,Rep_017,4724.46,14,8.0,3.7,Large,3128.97,1595.49,33.8
+2023-10-17 15:49:25.130260520,Latin America,Cloud Platform,Software,Rep_005,27474.17,60,18.0,4.1,Large,17835.87,9638.3,35.1
+2023-10-19 02:56:01.923847696,Asia Pacific,Enterprise Suite,Hardware,Rep_004,197959.71,77,8.9,3.4,Small,92525.82,105433.89,53.3
+2023-10-20 14:02:38.717434868,Asia Pacific,IoT Gateway,Hardware,Rep_018,5683.66,45,21.4,5.0,Small,2954.37,2729.29,48.0
+2023-10-22 01:09:15.511022044,North America,Security Pro,Subscriptions,Rep_019,9728.15,96,22.8,5.0,Small,5086.87,4641.28,47.7
+2023-10-23 12:15:52.304609216,North America,Cloud Platform,Subscriptions,Rep_004,12776.7,34,3.1,4.3,Small,8860.21,3916.49,30.7
+2023-10-24 23:22:29.098196392,Latin America,Cloud Platform,Hardware,Rep_007,71239.72,45,15.4,4.6,Medium,32361.89,38877.83,54.6
+2023-10-26 10:29:05.891783568,Asia Pacific,Data Analytics,Services,Rep_010,7338.01,61,15.3,4.4,Medium,4694.47,2643.54,36.0
+2023-10-27 21:35:42.685370740,North America,Data Analytics,Services,Rep_018,2996.44,83,11.1,4.2,Small,1498.99,1497.45,50.0
+2023-10-29 08:42:19.478957916,North America,IoT Gateway,Software,Rep_019,1772.93,16,28.0,3.1,Small,1097.91,675.02,38.1
+2023-10-30 19:48:56.272545088,Asia Pacific,IoT Gateway,Subscriptions,Rep_004,7558.43,66,24.8,3.9,Small,3975.76,3582.67,47.4
+2023-11-01 06:55:33.066132264,North America,Enterprise Suite,Subscriptions,Rep_010,4731.25,40,20.9,4.3,Large,2713.41,2017.84,42.6
+2023-11-02 18:02:09.859719436,North America,Enterprise Suite,Hardware,Rep_001,90401.05,17,21.4,4.4,Enterprise,58741.11,31659.94,35.0
+2023-11-04 05:08:46.653306612,Europe,IoT Gateway,Software,Rep_018,67767.29,34,13.9,3.7,Small,43455.75,24311.54,35.9
+2023-11-05 16:15:23.446893788,Asia Pacific,IoT Gateway,Software,Rep_005,2341.98,16,27.6,4.9,Small,1545.54,796.44,34.0
+2023-11-07 03:22:00.240480960,Asia Pacific,Security Pro,Hardware,Rep_015,3453.31,60,20.8,3.3,Large,1443.09,2010.22,58.2
+2023-11-08 14:28:37.034068136,North America,Data Analytics,Software,Rep_017,8853.11,66,21.9,4.0,Enterprise,5379.28,3473.83,39.2
+2023-11-10 01:35:13.827655308,Asia Pacific,Enterprise Suite,Subscriptions,Rep_003,43333.08,66,25.9,4.4,Medium,19153.06,24180.02,55.8
+2023-11-11 12:41:50.621242484,North America,Data Analytics,Software,Rep_012,8676.87,90,8.2,4.4,Small,4553.15,4123.72,47.5
+2023-11-12 23:48:27.414829660,North America,Data Analytics,Software,Rep_002,3726.82,13,24.2,4.3,Small,2104.08,1622.74,43.5
+2023-11-14 10:55:04.208416832,Asia Pacific,IoT Gateway,Subscriptions,Rep_001,7550.29,56,5.9,3.6,Medium,3932.36,3617.93,47.9
+2023-11-15 22:01:41.002004008,Asia Pacific,Security Pro,Services,Rep_017,3811.65,31,10.4,3.3,Small,2118.83,1692.82,44.4
+2023-11-17 09:08:17.795591180,Latin America,Cloud Platform,Software,Rep_016,16696.8,34,10.1,4.3,Small,11670.36,5026.44,30.1
+2023-11-18 20:14:54.589178356,Asia Pacific,Security Pro,Software,Rep_005,3460.47,39,29.4,4.2,Medium,1524.56,1935.91,55.9
+2023-11-20 07:21:31.382765528,Europe,Security Pro,Software,Rep_015,4391.72,67,25.7,3.4,Small,2646.61,1745.11,39.7
+2023-11-21 18:28:08.176352704,North America,Data Analytics,Services,Rep_003,32673.53,8,21.0,4.4,Large,16951.04,15722.49,48.1
+2023-11-23 05:34:44.969939880,Europe,Security Pro,Software,Rep_007,3222.66,87,21.8,3.9,Small,1417.66,1805.0,56.0
+2023-11-24 16:41:21.763527052,North America,Enterprise Suite,Hardware,Rep_011,1428.88,78,16.9,4.3,Small,639.6,789.28,55.2
+2023-11-26 03:47:58.557114228,North America,Data Analytics,Subscriptions,Rep_010,9081.48,55,28.4,4.7,Medium,6218.83,2862.65,31.5
+2023-11-27 14:54:35.350701400,Middle East,Enterprise Suite,Software,Rep_009,5257.61,27,14.9,3.3,Small,3490.42,1767.19,33.6
+2023-11-29 02:01:12.144288576,Europe,Cloud Platform,Subscriptions,Rep_014,14968.43,93,11.4,3.0,Enterprise,10060.47,4907.96,32.8
+2023-11-30 13:07:48.937875752,Latin America,Data Analytics,Subscriptions,Rep_013,11860.47,53,4.9,4.6,Medium,8272.2,3588.27,30.3
+2023-12-02 00:14:25.731462924,Asia Pacific,Cloud Platform,Software,Rep_002,7798.59,39,23.6,4.2,Small,3606.81,4191.78,53.8
+2023-12-03 11:21:02.525050100,Asia Pacific,Data Analytics,Subscriptions,Rep_003,7530.73,65,22.0,4.4,Large,3815.31,3715.42,49.3
+2023-12-04 22:27:39.318637272,Europe,IoT Gateway,Hardware,Rep_007,3350.85,17,11.5,4.7,Small,2013.08,1337.77,39.9
+2023-12-06 09:34:16.112224448,Europe,Security Pro,Subscriptions,Rep_018,8955.44,30,0.8,4.6,Enterprise,4881.98,4073.46,45.5
+2023-12-07 20:40:52.905811624,Europe,IoT Gateway,Hardware,Rep_003,23331.08,53,25.2,4.9,Small,12260.88,11070.2,47.4
+2023-12-09 07:47:29.699398796,North America,Cloud Platform,Services,Rep_010,2519.62,13,0.3,4.1,Medium,1278.31,1241.31,49.3
+2023-12-10 18:54:06.492985972,Asia Pacific,Security Pro,Hardware,Rep_007,8050.77,21,21.1,4.0,Small,4654.43,3396.34,42.2
+2023-12-12 06:00:43.286573144,North America,Data Analytics,Subscriptions,Rep_009,28171.51,19,29.1,3.8,Medium,16133.2,12038.31,42.7
+2023-12-13 17:07:20.080160320,North America,Security Pro,Services,Rep_017,14861.2,53,13.1,3.3,Large,6664.32,8196.88,55.2
+2023-12-15 04:13:56.873747492,Asia Pacific,Enterprise Suite,Hardware,Rep_011,39001.97,19,7.0,4.1,Large,21120.42,17881.55,45.8
+2023-12-16 15:20:33.667334668,North America,Security Pro,Subscriptions,Rep_007,4097.9,57,21.1,3.6,Small,2319.58,1778.32,43.4
+2023-12-18 02:27:10.460921844,Middle East,Enterprise Suite,Software,Rep_014,900.61,25,24.5,4.8,Small,514.33,386.28,42.9
+2023-12-19 13:33:47.254509016,Middle East,Security Pro,Software,Rep_019,10309.1,86,16.4,4.2,Large,4773.44,5535.66,53.7
+2023-12-21 00:40:24.048096192,Latin America,Enterprise Suite,Software,Rep_004,12520.03,31,29.0,4.2,Enterprise,7795.99,4724.04,37.7
+2023-12-22 11:47:00.841683364,Europe,Cloud Platform,Software,Rep_006,41860.85,81,1.6,3.7,Small,17060.8,24800.05,59.2
+2023-12-23 22:53:37.635270540,North America,IoT Gateway,Software,Rep_010,33717.59,55,15.1,3.1,Medium,17076.26,16641.33,49.4
+2023-12-25 10:00:14.428857716,Middle East,Data Analytics,Subscriptions,Rep_007,15430.36,23,21.6,3.1,Small,9783.83,5646.53,36.6
+2023-12-26 21:06:51.222444888,Europe,Security Pro,Software,Rep_013,20301.87,32,25.9,3.8,Large,11555.17,8746.7,43.1
+2023-12-28 08:13:28.016032064,Middle East,IoT Gateway,Services,Rep_014,6436.98,62,5.4,3.2,Small,3079.12,3357.86,52.2
+2023-12-29 19:20:04.809619236,Middle East,Data Analytics,Software,Rep_004,1876.31,74,24.0,4.2,Small,1141.71,734.6,39.2
+2023-12-31 06:26:41.603206412,Latin America,Data Analytics,Subscriptions,Rep_008,9332.57,10,16.6,4.8,Large,5321.59,4010.98,43.0
+2024-01-01 17:33:18.396793584,North America,Enterprise Suite,Subscriptions,Rep_005,26346.43,72,11.9,4.8,Small,16832.02,9514.41,36.1
+2024-01-03 04:39:55.190380760,Europe,Cloud Platform,Hardware,Rep_001,17812.1,54,4.0,4.3,Medium,11052.54,6759.56,37.9
+2024-01-04 15:46:31.983967936,Latin America,Cloud Platform,Subscriptions,Rep_004,22039.0,52,26.0,3.4,Medium,12849.45,9189.55,41.7
+2024-01-06 02:53:08.777555108,North America,IoT Gateway,Software,Rep_003,4849.8,20,4.7,4.7,Small,2650.19,2199.61,45.4
+2024-01-07 13:59:45.571142284,North America,Cloud Platform,Services,Rep_009,5891.96,32,9.3,4.8,Small,2592.2,3299.76,56.0
+2024-01-09 01:06:22.364729456,Europe,Security Pro,Software,Rep_008,14474.02,14,8.7,3.4,Medium,6924.37,7549.65,52.2
+2024-01-10 12:12:59.158316632,Middle East,Cloud Platform,Subscriptions,Rep_001,4205.68,50,26.1,4.5,Small,2211.05,1994.63,47.4
+2024-01-11 23:19:35.951903808,Asia Pacific,IoT Gateway,Software,Rep_006,4363.98,28,20.2,3.6,Medium,2530.19,1833.79,42.0
+2024-01-13 10:26:12.745490980,Europe,Cloud Platform,Hardware,Rep_009,11586.3,53,23.9,4.6,Large,6420.11,5166.19,44.6
+2024-01-14 21:32:49.539078156,North America,Security Pro,Services,Rep_007,20192.89,24,7.5,5.0,Large,9822.94,10369.95,51.4
+2024-01-16 08:39:26.332665328,Asia Pacific,Enterprise Suite,Software,Rep_004,6377.72,79,18.7,3.1,Small,2563.46,3814.26,59.8
+2024-01-17 19:46:03.126252504,Middle East,IoT Gateway,Software,Rep_013,2006.55,22,17.2,4.8,Small,1101.34,905.21,45.1
+2024-01-19 06:52:39.919839680,North America,Enterprise Suite,Software,Rep_017,3351.07,30,25.0,4.2,Small,1627.57,1723.5,51.4
+2024-01-20 17:59:16.713426852,Europe,Enterprise Suite,Software,Rep_002,10346.53,63,27.2,4.9,Small,6418.81,3927.72,38.0
+2024-01-22 05:05:53.507014028,Latin America,Enterprise Suite,Hardware,Rep_005,10196.76,4,0.4,3.9,Medium,4151.96,6044.8,59.3
+2024-01-23 16:12:30.300601200,Asia Pacific,Data Analytics,Software,Rep_012,10823.62,77,20.2,4.7,Medium,6228.43,4595.19,42.5
+2024-01-25 03:19:07.094188376,Asia Pacific,Data Analytics,Software,Rep_008,15146.95,59,1.6,3.1,Small,10336.92,4810.03,31.8
+2024-01-26 14:25:43.887775548,Asia Pacific,Enterprise Suite,Software,Rep_006,8159.78,87,16.5,3.7,Small,3690.85,4468.93,54.8
+2024-01-28 01:32:20.681362724,Europe,IoT Gateway,Services,Rep_008,11137.44,8,8.6,3.1,Small,6030.87,5106.57,45.9
+2024-01-29 12:38:57.474949900,North America,Security Pro,Software,Rep_018,7676.87,82,9.2,5.0,Medium,3281.3,4395.57,57.3
+2024-01-30 23:45:34.268537072,Latin America,Security Pro,Software,Rep_003,32160.05,12,10.6,4.6,Small,18900.61,13259.44,41.2
+2024-02-01 10:52:11.062124248,Latin America,Cloud Platform,Software,Rep_012,45198.1,31,18.6,4.7,Medium,25544.14,19653.96,43.5
+2024-02-02 21:58:47.855711420,Latin America,IoT Gateway,Hardware,Rep_003,1945.33,78,10.0,4.9,Small,1015.87,929.46,47.8
+2024-02-04 09:05:24.649298596,Latin America,Data Analytics,Services,Rep_006,5965.2,34,22.0,3.2,Large,3319.12,2646.08,44.4
+2024-02-05 20:12:01.442885772,Europe,Enterprise Suite,Software,Rep_002,8427.62,82,12.1,3.8,Large,5637.85,2789.77,33.1
+2024-02-07 07:18:38.236472944,Europe,Cloud Platform,Software,Rep_012,5882.3,98,2.1,3.1,Small,2699.32,3182.98,54.1
+2024-02-08 18:25:15.030060120,Asia Pacific,Security Pro,Services,Rep_002,69668.75,75,23.5,3.4,Small,28339.11,41329.64,59.3
+2024-02-10 05:31:51.823647292,Asia Pacific,Data Analytics,Services,Rep_006,10601.45,76,8.6,3.5,Medium,6981.05,3620.4,34.2
+2024-02-11 16:38:28.617234468,Asia Pacific,Data Analytics,Software,Rep_017,3082.68,49,13.0,3.9,Small,1766.79,1315.89,42.7
+2024-02-13 03:45:05.410821640,Asia Pacific,Enterprise Suite,Services,Rep_003,16576.33,79,20.6,3.5,Medium,11059.69,5516.64,33.3
+2024-02-14 14:51:42.204408816,Latin America,Security Pro,Subscriptions,Rep_002,11216.82,57,10.0,3.2,Large,6495.48,4721.34,42.1
+2024-02-16 01:58:18.997995992,North America,IoT Gateway,Software,Rep_020,11672.97,95,1.7,3.3,Medium,7506.28,4166.69,35.7
+2024-02-17 13:04:55.791583164,Europe,Data Analytics,Services,Rep_008,70930.19,93,11.2,3.3,Large,37515.12,33415.07,47.1
+2024-02-19 00:11:32.585170340,North America,Enterprise Suite,Services,Rep_012,12344.21,26,28.3,4.9,Small,7714.61,4629.6,37.5
+2024-02-20 11:18:09.378757512,Europe,IoT Gateway,Hardware,Rep_004,5628.54,18,19.3,4.5,Small,3793.14,1835.4,32.6
+2024-02-21 22:24:46.172344688,North America,Security Pro,Software,Rep_005,775.62,96,20.1,4.9,Large,443.37,332.25,42.8
+2024-02-23 09:31:22.965931864,Europe,Data Analytics,Software,Rep_013,6644.34,86,19.0,3.9,Small,3018.1,3626.24,54.6
+2024-02-24 20:37:59.759519040,Europe,IoT Gateway,Subscriptions,Rep_015,38838.37,38,6.0,3.6,Medium,18667.25,20171.12,51.9
+2024-02-26 07:44:36.553106208,North America,IoT Gateway,Subscriptions,Rep_016,7263.35,81,12.6,4.6,Small,3338.19,3925.16,54.0
+2024-02-27 18:51:13.346693384,Europe,IoT Gateway,Services,Rep_010,551.11,87,22.5,3.7,Small,261.26,289.85,52.6
+2024-02-29 05:57:50.140280560,North America,Data Analytics,Hardware,Rep_016,4455.81,88,3.0,3.6,Enterprise,2191.92,2263.89,50.8
+2024-03-01 17:04:26.933867736,North America,Data Analytics,Services,Rep_012,26668.18,50,8.3,3.5,Small,15108.59,11559.59,43.3
+2024-03-03 04:11:03.727454912,Latin America,Cloud Platform,Hardware,Rep_017,15599.29,8,8.3,3.3,Enterprise,8991.39,6607.9,42.4
+2024-03-04 15:17:40.521042080,Europe,Security Pro,Software,Rep_016,2957.63,41,13.0,3.5,Enterprise,1561.48,1396.15,47.2
+2024-03-06 02:24:17.314629256,North America,Enterprise Suite,Software,Rep_012,4111.97,6,29.4,3.7,Large,2403.97,1708.0,41.5
+2024-03-07 13:30:54.108216432,Europe,IoT Gateway,Services,Rep_008,4950.03,69,2.0,4.3,Medium,2101.15,2848.88,57.6
+2024-03-09 00:37:30.901803608,Asia Pacific,Cloud Platform,Software,Rep_020,3658.26,44,15.6,3.1,Medium,1559.65,2098.61,57.4
+2024-03-10 11:44:07.695390784,North America,Enterprise Suite,Services,Rep_003,709.38,64,5.4,3.4,Large,320.32,389.06,54.8
+2024-03-11 22:50:44.488977952,Asia Pacific,Cloud Platform,Software,Rep_016,20258.09,29,29.1,4.6,Small,11251.81,9006.28,44.5
+2024-03-13 09:57:21.282565128,North America,Data Analytics,Software,Rep_013,36624.47,28,3.4,3.3,Medium,17001.02,19623.45,53.6
+2024-03-14 21:03:58.076152304,North America,IoT Gateway,Software,Rep_019,1310.1,11,12.1,3.7,Medium,635.38,674.72,51.5
+2024-03-16 08:10:34.869739480,Europe,Enterprise Suite,Hardware,Rep_008,36048.61,65,22.1,4.7,Medium,18748.66,17299.95,48.0
+2024-03-17 19:17:11.663326648,Europe,Enterprise Suite,Subscriptions,Rep_005,7160.77,19,21.1,3.3,Medium,4608.38,2552.39,35.6
+2024-03-19 06:23:48.456913824,Asia Pacific,Enterprise Suite,Software,Rep_020,35247.81,9,12.7,3.2,Small,14245.71,21002.1,59.6
+2024-03-20 17:30:25.250501000,Asia Pacific,Enterprise Suite,Subscriptions,Rep_008,8480.63,27,10.4,4.0,Medium,5044.39,3436.24,40.5
+2024-03-22 04:37:02.044088176,Middle East,Enterprise Suite,Hardware,Rep_012,9534.32,34,11.9,3.6,Large,5726.91,3807.41,39.9
+2024-03-23 15:43:38.837675352,Europe,Cloud Platform,Services,Rep_001,12669.1,44,7.9,4.1,Small,8103.11,4565.99,36.0
+2024-03-25 02:50:15.631262520,North America,IoT Gateway,Software,Rep_020,3139.82,68,6.2,4.6,Enterprise,2134.53,1005.29,32.0
+2024-03-26 13:56:52.424849696,Asia Pacific,Data Analytics,Services,Rep_006,33982.77,82,14.5,3.3,Medium,13798.41,20184.36,59.4
+2024-03-28 01:03:29.218436872,North America,Data Analytics,Services,Rep_018,2109.79,15,8.1,4.2,Large,941.25,1168.54,55.4
+2024-03-29 12:10:06.012024048,Europe,Data Analytics,Software,Rep_008,5001.63,51,8.6,4.0,Medium,3330.34,1671.29,33.4
+2024-03-30 23:16:42.805611224,North America,Data Analytics,Software,Rep_007,15201.02,13,19.7,3.3,Large,8171.39,7029.63,46.2
+2024-04-01 10:23:19.599198392,North America,Cloud Platform,Subscriptions,Rep_001,4398.27,83,29.1,4.2,Small,2504.27,1894.0,43.1
+2024-04-02 21:29:56.392785568,Middle East,Security Pro,Subscriptions,Rep_016,20599.82,49,18.1,3.5,Large,12337.4,8262.42,40.1
+2024-04-04 08:36:33.186372744,Latin America,IoT Gateway,Software,Rep_012,42236.47,70,2.3,4.0,Small,25499.0,16737.47,39.6
+2024-04-05 19:43:09.979959920,Asia Pacific,Enterprise Suite,Services,Rep_006,27311.28,56,2.3,3.2,Large,18558.62,8752.66,32.0
+2024-04-07 06:49:46.773547096,Europe,Security Pro,Subscriptions,Rep_020,793.67,76,28.5,3.9,Enterprise,554.84,238.83,30.1
+2024-04-08 17:56:23.567134264,North America,Data Analytics,Subscriptions,Rep_002,9424.01,51,8.9,3.6,Small,5805.64,3618.37,38.4
+2024-04-10 05:03:00.360721440,North America,Security Pro,Subscriptions,Rep_014,27845.29,37,2.8,4.6,Small,13537.44,14307.85,51.4
+2024-04-11 16:09:37.154308616,North America,IoT Gateway,Services,Rep_004,1668.87,17,18.0,3.1,Large,1108.01,560.86,33.6
+2024-04-13 03:16:13.947895792,Europe,Enterprise Suite,Hardware,Rep_001,19309.12,58,18.7,3.8,Small,8008.77,11300.35,58.5
+2024-04-14 14:22:50.741482968,Asia Pacific,Enterprise Suite,Software,Rep_018,18050.94,87,19.5,3.9,Large,8471.74,9579.2,53.1
+2024-04-16 01:29:27.535070136,Asia Pacific,IoT Gateway,Software,Rep_013,1892.19,90,8.0,4.5,Small,1266.28,625.91,33.1
+2024-04-17 12:36:04.328657312,North America,IoT Gateway,Services,Rep_002,22050.25,29,0.5,4.1,Small,10514.83,11535.42,52.3
+2024-04-18 23:42:41.122244488,Middle East,Data Analytics,Services,Rep_009,11240.04,33,29.0,4.3,Enterprise,5240.05,5999.99,53.4
+2024-04-20 10:49:17.915831664,Asia Pacific,Enterprise Suite,Software,Rep_002,17684.75,60,7.5,4.6,Medium,7806.71,9878.04,55.9
+2024-04-21 21:55:54.709418840,Europe,Security Pro,Subscriptions,Rep_009,2541.28,91,20.3,4.7,Large,1671.49,869.79,34.2
+2024-04-23 09:02:31.503006008,Asia Pacific,Cloud Platform,Services,Rep_001,9702.74,89,21.2,3.6,Small,5336.68,4366.06,45.0
+2024-04-24 20:09:08.296593184,Europe,Cloud Platform,Hardware,Rep_011,1047.48,55,18.3,4.1,Medium,631.07,416.41,39.8
+2024-04-26 07:15:45.090180360,North America,IoT Gateway,Hardware,Rep_003,527.22,10,9.4,4.7,Medium,248.7,278.52,52.8
+2024-04-27 18:22:21.883767536,Europe,Data Analytics,Hardware,Rep_020,9594.97,47,8.1,5.0,Medium,6020.0,3574.97,37.3
+2024-04-29 05:28:58.677354704,Asia Pacific,Cloud Platform,Software,Rep_004,30355.02,23,17.9,4.8,Medium,19063.0,11292.02,37.2
+2024-04-30 16:35:35.470941880,North America,Enterprise Suite,Software,Rep_018,10976.63,85,26.0,3.7,Medium,5420.03,5556.6,50.6
+2024-05-02 03:42:12.264529056,North America,IoT Gateway,Software,Rep_006,7509.05,21,28.4,3.4,Medium,3928.77,3580.28,47.7
+2024-05-03 14:48:49.058116232,North America,Security Pro,Software,Rep_003,6470.18,13,3.2,4.0,Small,2995.09,3475.09,53.7
+2024-05-05 01:55:25.851703408,North America,IoT Gateway,Hardware,Rep_011,2614.74,33,4.6,4.5,Large,1811.93,802.81,30.7
+2024-05-06 13:02:02.645290576,Latin America,Security Pro,Hardware,Rep_015,6209.07,24,28.3,4.0,Small,3686.21,2522.86,40.6
+2024-05-08 00:08:39.438877752,Asia Pacific,IoT Gateway,Software,Rep_005,13440.41,11,22.1,4.0,Medium,9144.36,4296.05,32.0
+2024-05-09 11:15:16.232464928,Europe,IoT Gateway,Services,Rep_020,4806.54,17,26.5,4.7,Small,2360.09,2446.45,50.9
+2024-05-10 22:21:53.026052104,North America,IoT Gateway,Software,Rep_010,19944.41,68,6.1,3.7,Medium,12656.07,7288.34,36.5
+2024-05-12 09:28:29.819639280,Europe,Security Pro,Subscriptions,Rep_012,10251.4,47,17.6,4.7,Large,6455.9,3795.5,37.0
+2024-05-13 20:35:06.613226448,Europe,Security Pro,Subscriptions,Rep_015,11853.46,25,21.0,3.8,Small,7200.94,4652.52,39.3
+2024-05-15 07:41:43.406813624,North America,IoT Gateway,Software,Rep_017,23538.56,94,20.4,3.7,Small,16234.35,7304.21,31.0
+2024-05-16 18:48:20.200400800,Europe,Cloud Platform,Hardware,Rep_010,4306.55,73,12.2,3.9,Small,2231.08,2075.47,48.2
+2024-05-18 05:54:56.993987976,Europe,Data Analytics,Software,Rep_006,17876.76,21,0.5,4.5,Medium,7851.74,10025.02,56.1
+2024-05-19 17:01:33.787575152,Asia Pacific,Data Analytics,Hardware,Rep_018,5096.09,84,17.5,3.3,Large,3065.36,2030.73,39.8
+2024-05-21 04:08:10.581162320,Asia Pacific,Data Analytics,Services,Rep_013,12178.38,83,7.6,3.4,Small,7535.9,4642.48,38.1
+2024-05-22 15:14:47.374749496,North America,Security Pro,Software,Rep_003,3733.4,83,13.5,4.9,Large,2137.44,1595.96,42.7
+2024-05-24 02:21:24.168336672,Europe,Security Pro,Hardware,Rep_010,2716.65,12,28.7,3.4,Small,1255.22,1461.43,53.8
+2024-05-25 13:28:00.961923848,Asia Pacific,Cloud Platform,Software,Rep_014,9047.45,37,12.0,4.1,Medium,4988.19,4059.26,44.9
+2024-05-27 00:34:37.755511024,Europe,Data Analytics,Software,Rep_006,843.67,42,25.2,4.2,Enterprise,416.48,427.19,50.6
+2024-05-28 11:41:14.549098192,Latin America,Data Analytics,Services,Rep_003,5678.71,17,5.7,4.0,Small,2999.72,2678.99,47.2
+2024-05-29 22:47:51.342685368,Asia Pacific,IoT Gateway,Software,Rep_016,1178.91,48,20.2,4.3,Medium,699.76,479.15,40.6
+2024-05-31 09:54:28.136272544,North America,Security Pro,Hardware,Rep_007,20641.95,28,29.3,3.5,Small,12871.59,7770.36,37.6
+2024-06-01 21:01:04.929859720,North America,Data Analytics,Hardware,Rep_020,28570.58,41,3.1,4.1,Small,13418.67,15151.91,53.0
+2024-06-03 08:07:41.723446896,Asia Pacific,Cloud Platform,Subscriptions,Rep_014,2873.42,99,0.2,3.7,Small,1498.77,1374.65,47.8
+2024-06-04 19:14:18.517034064,North America,Cloud Platform,Software,Rep_009,13547.75,47,13.0,4.3,Small,6513.06,7034.69,51.9
+2024-06-06 06:20:55.310621240,Europe,Data Analytics,Hardware,Rep_015,23836.25,18,2.8,3.3,Medium,10954.89,12881.36,54.0
+2024-06-07 17:27:32.104208416,Middle East,Security Pro,Services,Rep_003,23931.79,78,22.5,4.1,Medium,15197.07,8734.72,36.5
+2024-06-09 04:34:08.897795592,Europe,Cloud Platform,Software,Rep_002,10481.23,99,27.4,3.4,Medium,7051.52,3429.71,32.7
+2024-06-10 15:40:45.691382760,Europe,IoT Gateway,Subscriptions,Rep_002,19558.51,71,13.0,3.6,Small,9995.76,9562.75,48.9
+2024-06-12 02:47:22.484969936,Asia Pacific,Cloud Platform,Services,Rep_003,3717.48,13,7.8,3.4,Small,2324.85,1392.63,37.5
+2024-06-13 13:53:59.278557112,Europe,Enterprise Suite,Services,Rep_018,8953.03,82,13.0,3.4,Medium,5990.46,2962.57,33.1
+2024-06-15 01:00:36.072144288,Europe,Enterprise Suite,Services,Rep_014,4626.13,13,21.7,4.7,Enterprise,3024.74,1601.39,34.6
+2024-06-16 12:07:12.865731464,Middle East,Security Pro,Subscriptions,Rep_020,3359.19,31,0.3,3.6,Small,1527.91,1831.28,54.5
+2024-06-17 23:13:49.659318632,Europe,Data Analytics,Subscriptions,Rep_018,8461.45,2,17.7,4.9,Large,5812.06,2649.39,31.3
+2024-06-19 10:20:26.452905808,Middle East,Security Pro,Services,Rep_010,12296.09,16,18.4,4.9,Medium,6307.93,5988.16,48.7
+2024-06-20 21:27:03.246492984,Latin America,Security Pro,Services,Rep_002,32735.34,9,19.1,4.1,Medium,16425.68,16309.66,49.8
+2024-06-22 08:33:40.040080160,North America,Security Pro,Software,Rep_001,11138.76,73,7.3,3.3,Medium,4664.13,6474.63,58.1
+2024-06-23 19:40:16.833667336,North America,Security Pro,Software,Rep_004,17506.31,38,21.4,3.7,Small,9555.86,7950.45,45.4
+2024-06-25 06:46:53.627254504,North America,IoT Gateway,Hardware,Rep_014,17746.43,75,2.7,4.6,Small,7678.95,10067.48,56.7
+2024-06-26 17:53:30.420841680,North America,IoT Gateway,Software,Rep_001,203829.93,54,6.0,3.7,Medium,96729.93,107100.0,52.5
+2024-06-28 05:00:07.214428856,North America,Cloud Platform,Hardware,Rep_014,923.31,56,26.3,3.2,Small,457.11,466.2,50.5
+2024-06-29 16:06:44.008016032,Asia Pacific,Enterprise Suite,Software,Rep_016,3549.21,86,22.2,4.1,Enterprise,2280.89,1268.32,35.7
+2024-07-01 03:13:20.801603208,North America,Security Pro,Software,Rep_014,47518.16,97,0.4,4.7,Medium,31487.75,16030.41,33.7
+2024-07-02 14:19:57.595190376,North America,Cloud Platform,Services,Rep_020,5311.26,87,7.5,4.6,Small,2606.45,2704.81,50.9
+2024-07-04 01:26:34.388777552,Latin America,Enterprise Suite,Subscriptions,Rep_003,23457.93,45,6.4,3.4,Large,15426.16,8031.77,34.2
+2024-07-05 12:33:11.182364728,North America,Data Analytics,Software,Rep_003,10678.75,34,8.1,4.3,Small,7017.75,3661.0,34.3
+2024-07-06 23:39:47.975951904,Latin America,IoT Gateway,Hardware,Rep_009,101340.65,9,7.4,3.4,Medium,63783.33,37557.32,37.1
+2024-07-08 10:46:24.769539080,North America,Enterprise Suite,Subscriptions,Rep_006,2130.97,88,1.9,3.4,Medium,946.17,1184.8,55.6
+2024-07-09 21:53:01.563126248,North America,Data Analytics,Software,Rep_013,35107.17,8,13.8,4.7,Enterprise,21313.45,13793.72,39.3
+2024-07-11 08:59:38.356713424,Asia Pacific,Enterprise Suite,Services,Rep_002,66137.92,7,22.0,3.5,Large,45205.75,20932.17,31.6
+2024-07-12 20:06:15.150300600,Asia Pacific,IoT Gateway,Software,Rep_008,2398.74,36,18.2,3.5,Medium,1450.67,948.07,39.5
+2024-07-14 07:12:51.943887776,Latin America,IoT Gateway,Software,Rep_002,20732.22,18,20.2,3.0,Medium,10355.43,10376.79,50.1
+2024-07-15 18:19:28.737474944,Asia Pacific,Cloud Platform,Subscriptions,Rep_004,2543.77,3,2.4,4.7,Enterprise,1399.52,1144.25,45.0
+2024-07-17 05:26:05.531062120,Latin America,Security Pro,Software,Rep_015,8401.74,28,28.5,4.6,Small,4988.26,3413.48,40.6
+2024-07-18 16:32:42.324649296,North America,Enterprise Suite,Services,Rep_004,5955.64,70,25.2,4.3,Small,3294.49,2661.15,44.7
+2024-07-20 03:39:19.118236472,North America,Enterprise Suite,Services,Rep_013,453.36,44,24.2,4.5,Small,197.66,255.7,56.4
+2024-07-21 14:45:55.911823648,Asia Pacific,Data Analytics,Software,Rep_012,13481.6,21,24.7,3.3,Small,6654.78,6826.82,50.6
+2024-07-23 01:52:32.705410816,Latin America,IoT Gateway,Services,Rep_013,9623.92,28,28.0,3.9,Medium,6166.23,3457.69,35.9
+2024-07-24 12:59:09.498997992,Middle East,Enterprise Suite,Subscriptions,Rep_014,47805.44,54,16.3,3.7,Medium,31476.32,16329.12,34.2
+2024-07-26 00:05:46.292585168,Europe,IoT Gateway,Software,Rep_020,16871.35,54,6.0,3.2,Medium,7443.47,9427.88,55.9
+2024-07-27 11:12:23.086172344,Europe,Enterprise Suite,Subscriptions,Rep_018,126634.56,65,18.5,4.0,Small,86835.35,39799.21,31.4
+2024-07-28 22:18:59.879759520,Asia Pacific,Cloud Platform,Hardware,Rep_006,9213.74,21,22.3,4.8,Large,4594.4,4619.34,50.1
+2024-07-30 09:25:36.673346688,North America,Security Pro,Services,Rep_011,7139.26,99,22.1,3.1,Small,4274.23,2865.03,40.1
+2024-07-31 20:32:13.466933864,Middle East,Enterprise Suite,Services,Rep_002,6494.9,13,15.6,3.6,Medium,4062.87,2432.03,37.4
+2024-08-02 07:38:50.260521040,Latin America,IoT Gateway,Software,Rep_019,4781.42,57,2.1,3.4,Medium,3077.24,1704.18,35.6
+2024-08-03 18:45:27.054108216,Europe,Cloud Platform,Subscriptions,Rep_019,572.89,49,11.1,3.5,Small,391.7,181.19,31.6
+2024-08-05 05:52:03.847695392,Asia Pacific,Enterprise Suite,Subscriptions,Rep_005,6221.5,54,27.6,4.8,Small,3072.65,3148.85,50.6
+2024-08-06 16:58:40.641282560,Asia Pacific,Data Analytics,Services,Rep_019,677.61,10,17.5,3.9,Small,445.56,232.05,34.2
+2024-08-08 04:05:17.434869736,North America,Security Pro,Services,Rep_002,13938.92,53,16.1,3.9,Large,6126.24,7812.68,56.0
+2024-08-09 15:11:54.228456912,Latin America,Enterprise Suite,Services,Rep_010,1829.74,44,8.1,4.5,Enterprise,1118.91,710.83,38.8
+2024-08-11 02:18:31.022044088,Europe,Cloud Platform,Hardware,Rep_002,2770.55,47,11.1,3.3,Medium,1724.93,1045.62,37.7
+2024-08-12 13:25:07.815631264,Latin America,Data Analytics,Services,Rep_011,3628.98,53,26.9,4.0,Small,2189.43,1439.55,39.7
+2024-08-14 00:31:44.609218432,North America,Cloud Platform,Hardware,Rep_018,6336.48,74,20.0,3.9,Medium,3014.23,3322.25,52.4
+2024-08-15 11:38:21.402805608,Latin America,Cloud Platform,Hardware,Rep_015,8170.14,46,23.6,4.2,Large,5407.92,2762.22,33.8
+2024-08-16 22:44:58.196392784,Europe,Data Analytics,Services,Rep_009,29773.54,13,13.6,5.0,Large,13417.67,16355.87,54.9
+2024-08-18 09:51:34.989979960,North America,Cloud Platform,Hardware,Rep_019,4051.99,37,18.9,4.5,Small,1685.99,2366.0,58.4
+2024-08-19 20:58:11.783567136,Latin America,Data Analytics,Software,Rep_009,14417.17,24,7.5,3.8,Small,8870.01,5547.16,38.5
+2024-08-21 08:04:48.577154304,North America,Enterprise Suite,Software,Rep_003,214709.38,2,21.2,4.7,Large,116510.48,98198.9,45.7
+2024-08-22 19:11:25.370741480,North America,Data Analytics,Hardware,Rep_009,12744.06,86,12.8,3.3,Small,8343.91,4400.15,34.5
+2024-08-24 06:18:02.164328656,Middle East,Data Analytics,Services,Rep_014,6525.1,81,13.3,3.1,Small,3360.55,3164.55,48.5
+2024-08-25 17:24:38.957915832,Middle East,Security Pro,Hardware,Rep_019,3181.21,14,19.5,3.4,Small,1433.08,1748.13,55.0
+2024-08-27 04:31:15.751503000,Europe,Data Analytics,Services,Rep_007,6417.62,10,28.1,3.7,Medium,4177.44,2240.18,34.9
+2024-08-28 15:37:52.545090176,Asia Pacific,Data Analytics,Hardware,Rep_016,2797.65,35,1.9,4.0,Large,1579.76,1217.89,43.5
+2024-08-30 02:44:29.338677352,Europe,Enterprise Suite,Services,Rep_016,11185.73,25,24.7,4.2,Enterprise,5109.18,6076.55,54.3
+2024-08-31 13:51:06.132264528,North America,Security Pro,Software,Rep_001,9175.14,3,8.8,4.8,Medium,5652.94,3522.2,38.4
+2024-09-02 00:57:42.925851704,North America,IoT Gateway,Hardware,Rep_004,605.07,17,13.3,4.0,Medium,334.81,270.26,44.7
+2024-09-03 12:04:19.719438872,Asia Pacific,Enterprise Suite,Services,Rep_004,7924.63,12,0.7,4.0,Small,4606.54,3318.09,41.9
+2024-09-04 23:10:56.513026048,Asia Pacific,Enterprise Suite,Subscriptions,Rep_007,29477.29,54,9.0,3.1,Medium,15866.73,13610.56,46.2
+2024-09-06 10:17:33.306613224,Asia Pacific,IoT Gateway,Hardware,Rep_008,5019.4,24,15.1,3.1,Small,3255.65,1763.75,35.1
+2024-09-07 21:24:10.100200400,Asia Pacific,Data Analytics,Software,Rep_017,3701.61,29,1.7,4.1,Medium,2401.86,1299.75,35.1
+2024-09-09 08:30:46.893787576,North America,Cloud Platform,Software,Rep_005,1551.16,43,14.7,3.9,Small,950.58,600.58,38.7
+2024-09-10 19:37:23.687374744,Europe,Security Pro,Software,Rep_007,871.67,25,27.8,4.7,Small,376.23,495.44,56.8
+2024-09-12 06:44:00.480961920,North America,Cloud Platform,Services,Rep_020,21974.09,60,3.2,3.3,Small,14319.55,7654.54,34.8
+2024-09-13 17:50:37.274549096,Europe,IoT Gateway,Software,Rep_020,6517.37,90,22.9,3.0,Small,3918.92,2598.45,39.9
+2024-09-15 04:57:14.068136272,Europe,Enterprise Suite,Hardware,Rep_004,20464.07,65,12.3,3.9,Small,12464.81,7999.26,39.1
+2024-09-16 16:03:50.861723448,Latin America,Enterprise Suite,Hardware,Rep_006,50898.49,84,19.7,3.5,Small,25901.98,24996.51,49.1
+2024-09-18 03:10:27.655310616,Europe,Security Pro,Software,Rep_007,24477.2,28,7.8,3.1,Enterprise,16247.57,8229.63,33.6
+2024-09-19 14:17:04.448897792,North America,Enterprise Suite,Hardware,Rep_018,4226.6,16,4.8,4.4,Medium,2610.4,1616.2,38.2
+2024-09-21 01:23:41.242484968,North America,Enterprise Suite,Software,Rep_005,9641.59,47,4.8,3.2,Medium,4182.3,5459.29,56.6
+2024-09-22 12:30:18.036072144,Asia Pacific,Security Pro,Hardware,Rep_020,3874.89,81,2.1,4.2,Large,2023.98,1850.91,47.8
+2024-09-23 23:36:54.829659320,Asia Pacific,Security Pro,Software,Rep_003,3463.57,92,5.6,3.6,Enterprise,2306.44,1157.13,33.4
+2024-09-25 10:43:31.623246488,North America,IoT Gateway,Services,Rep_007,12226.71,58,19.9,3.3,Medium,5063.8,7162.91,58.6
+2024-09-26 21:50:08.416833664,North America,Enterprise Suite,Software,Rep_014,2984.68,76,26.5,3.8,Large,2054.73,929.95,31.2
+2024-09-28 08:56:45.210420840,Asia Pacific,Enterprise Suite,Subscriptions,Rep_007,571.93,27,24.4,4.6,Small,345.3,226.63,39.6
+2024-09-29 20:03:22.004008016,North America,IoT Gateway,Hardware,Rep_005,2791.19,53,20.6,3.8,Small,1645.16,1146.03,41.1
+2024-10-01 07:09:58.797595192,Latin America,Data Analytics,Services,Rep_005,5606.84,42,3.3,4.5,Medium,2697.83,2909.01,51.9
+2024-10-02 18:16:35.591182360,Asia Pacific,Data Analytics,Services,Rep_002,50295.87,59,8.7,3.3,Medium,23872.31,26423.56,52.5
+2024-10-04 05:23:12.384769536,North America,Data Analytics,Services,Rep_006,4495.69,47,9.3,4.5,Medium,3068.84,1426.85,31.7
+2024-10-05 16:29:49.178356712,North America,IoT Gateway,Services,Rep_015,14977.57,94,7.5,3.5,Small,7331.25,7646.32,51.1
+2024-10-07 03:36:25.971943888,Middle East,Enterprise Suite,Hardware,Rep_010,6621.19,34,15.5,4.4,Small,4188.91,2432.28,36.7
+2024-10-08 14:43:02.765531056,Europe,IoT Gateway,Hardware,Rep_007,35301.69,37,16.1,4.1,Medium,18284.04,17017.65,48.2
+2024-10-10 01:49:39.559118232,Europe,IoT Gateway,Hardware,Rep_005,32484.41,6,10.7,4.9,Small,14350.84,18133.57,55.8
+2024-10-11 12:56:16.352705408,Latin America,Data Analytics,Hardware,Rep_001,33236.71,7,10.6,3.8,Medium,13401.53,19835.18,59.7
+2024-10-13 00:02:53.146292584,Middle East,Cloud Platform,Software,Rep_013,1011.53,96,24.9,3.1,Medium,569.77,441.76,43.7
+2024-10-14 11:09:29.939879760,Middle East,Enterprise Suite,Software,Rep_018,10384.49,96,23.7,3.0,Large,7193.69,3190.8,30.7
+2024-10-15 22:16:06.733466928,Asia Pacific,Data Analytics,Services,Rep_013,20145.3,25,9.2,4.7,Large,10289.03,9856.27,48.9
+2024-10-17 09:22:43.527054104,Europe,Cloud Platform,Hardware,Rep_018,12808.27,33,27.4,4.0,Large,6495.81,6312.46,49.3
+2024-10-18 20:29:20.320641280,North America,Cloud Platform,Services,Rep_005,17394.61,55,28.6,4.6,Medium,8753.45,8641.16,49.7
+2024-10-20 07:35:57.114228456,Asia Pacific,Security Pro,Services,Rep_013,8690.81,58,9.8,3.5,Large,4833.51,3857.3,44.4
+2024-10-21 18:42:33.907815632,Europe,Enterprise Suite,Subscriptions,Rep_004,3315.15,7,10.6,3.7,Medium,1764.32,1550.83,46.8
+2024-10-23 05:49:10.701402800,Europe,Cloud Platform,Software,Rep_017,1057.31,57,15.2,3.1,Small,702.03,355.28,33.6
+2024-10-24 16:55:47.494989976,Latin America,Data Analytics,Software,Rep_003,3734.3,12,28.2,4.9,Small,2060.05,1674.25,44.8
+2024-10-26 04:02:24.288577152,North America,Security Pro,Software,Rep_017,201537.72,16,26.3,4.3,Small,111314.8,90222.92,44.8
+2024-10-27 15:09:01.082164328,Europe,Enterprise Suite,Hardware,Rep_011,4524.3,80,3.1,4.9,Medium,1997.53,2526.77,55.8
+2024-10-29 02:15:37.875751504,North America,IoT Gateway,Services,Rep_020,771.8,43,11.8,3.5,Medium,536.26,235.54,30.5
+2024-10-30 13:22:14.669338672,Europe,Data Analytics,Software,Rep_004,19519.69,77,16.6,4.2,Large,9271.69,10248.0,52.5
+2024-11-01 00:28:51.462925848,North America,Cloud Platform,Services,Rep_002,22619.15,7,15.1,4.4,Small,9545.49,13073.66,57.8
+2024-11-02 11:35:28.256513024,North America,Cloud Platform,Hardware,Rep_020,37979.02,51,5.8,3.6,Small,22747.3,15231.72,40.1
+2024-11-03 22:42:05.050100200,North America,Data Analytics,Services,Rep_016,14259.44,73,25.8,4.7,Enterprise,8250.65,6008.79,42.1
+2024-11-05 09:48:41.843687376,Asia Pacific,Cloud Platform,Services,Rep_018,22353.13,32,20.3,4.9,Small,11725.19,10627.94,47.5
+2024-11-06 20:55:18.637274544,Asia Pacific,Security Pro,Software,Rep_008,73737.04,75,25.1,4.8,Medium,38834.18,34902.86,47.3
+2024-11-08 08:01:55.430861720,Europe,Enterprise Suite,Hardware,Rep_003,3312.41,8,25.8,4.5,Medium,2105.1,1207.31,36.4
+2024-11-09 19:08:32.224448896,Middle East,Security Pro,Hardware,Rep_009,2610.71,97,22.5,3.6,Medium,1197.57,1413.14,54.1
+2024-11-11 06:15:09.018036072,Europe,Cloud Platform,Software,Rep_020,2178.73,87,13.2,3.6,Small,1407.63,771.1,35.4
+2024-11-12 17:21:45.811623248,North America,IoT Gateway,Hardware,Rep_006,5890.38,89,18.3,4.9,Small,3502.56,2387.82,40.5
+2024-11-14 04:28:22.605210416,Latin America,Enterprise Suite,Software,Rep_010,45256.74,72,4.8,3.0,Small,23791.06,21465.68,47.4
+2024-11-15 15:34:59.398797592,North America,Enterprise Suite,Hardware,Rep_010,15270.56,45,20.2,4.4,Medium,8206.53,7064.03,46.3
+2024-11-17 02:41:36.192384768,Middle East,Data Analytics,Hardware,Rep_013,14565.78,86,5.4,4.4,Medium,6947.79,7617.99,52.3
+2024-11-18 13:48:12.985971944,North America,Data Analytics,Hardware,Rep_017,913.09,59,20.8,4.2,Small,571.26,341.83,37.4
+2024-11-20 00:54:49.779559112,Middle East,IoT Gateway,Services,Rep_009,3526.9,4,6.9,5.0,Medium,1953.42,1573.48,44.6
+2024-11-21 12:01:26.573146288,North America,Enterprise Suite,Software,Rep_017,895.35,67,3.5,3.6,Large,444.32,451.03,50.4
+2024-11-22 23:08:03.366733464,Latin America,IoT Gateway,Services,Rep_009,33040.68,29,5.0,3.7,Small,19124.44,13916.24,42.1
+2024-11-24 10:14:40.160320640,Europe,Data Analytics,Software,Rep_009,54326.95,29,0.1,3.2,Medium,37959.34,16367.61,30.1
+2024-11-25 21:21:16.953907816,Middle East,Data Analytics,Software,Rep_001,20650.2,98,21.6,3.9,Medium,10956.56,9693.64,46.9
+2024-11-27 08:27:53.747494984,North America,Enterprise Suite,Subscriptions,Rep_002,2479.61,98,22.0,3.5,Small,1676.73,802.88,32.4
+2024-11-28 19:34:30.541082160,Europe,Security Pro,Software,Rep_016,47974.6,28,15.4,3.7,Small,24155.45,23819.15,49.6
+2024-11-30 06:41:07.334669336,Middle East,Cloud Platform,Hardware,Rep_001,5979.51,77,4.8,4.7,Medium,2489.99,3489.52,58.4
+2024-12-01 17:47:44.128256512,Europe,Data Analytics,Hardware,Rep_010,1886.82,79,2.5,4.9,Large,870.34,1016.48,53.9
+2024-12-03 04:54:20.921843688,Asia Pacific,Data Analytics,Software,Rep_018,2547.11,87,0.6,3.4,Large,1338.78,1208.33,47.4
+2024-12-04 16:00:57.715430856,Asia Pacific,Security Pro,Software,Rep_008,4835.85,44,5.0,3.7,Medium,2252.98,2582.87,53.4
+2024-12-06 03:07:34.509018032,Europe,Security Pro,Software,Rep_011,8599.8,90,26.7,4.9,Large,3440.51,5159.29,60.0
+2024-12-07 14:14:11.302605208,Asia Pacific,IoT Gateway,Subscriptions,Rep_002,6676.75,4,7.2,3.1,Small,4503.47,2173.28,32.5
+2024-12-09 01:20:48.096192384,Europe,IoT Gateway,Hardware,Rep_008,1487.42,90,10.6,3.2,Medium,971.53,515.89,34.7
+2024-12-10 12:27:24.889779560,Latin America,Cloud Platform,Software,Rep_008,34751.56,9,3.2,3.3,Medium,21639.37,13112.19,37.7
+2024-12-11 23:34:01.683366728,North America,Cloud Platform,Hardware,Rep_017,6763.35,5,6.7,4.2,Small,3045.84,3717.51,55.0
+2024-12-13 10:40:38.476953904,North America,Enterprise Suite,Services,Rep_015,3440.92,56,15.6,3.3,Large,1500.62,1940.3,56.4
+2024-12-14 21:47:15.270541080,Middle East,IoT Gateway,Software,Rep_017,30710.59,96,18.2,4.9,Medium,12907.09,17803.5,58.0
+2024-12-16 08:53:52.064128256,Latin America,Data Analytics,Hardware,Rep_013,1958.46,84,7.4,3.9,Small,1208.78,749.68,38.3
+2024-12-17 20:00:28.857715432,Europe,IoT Gateway,Hardware,Rep_019,1147.49,50,1.7,4.0,Enterprise,778.74,368.75,32.1
+2024-12-19 07:07:05.651302600,Asia Pacific,Data Analytics,Subscriptions,Rep_005,37308.82,75,11.7,3.5,Small,19742.36,17566.46,47.1
+2024-12-20 18:13:42.444889776,North America,Security Pro,Software,Rep_012,78406.76,15,7.0,3.9,Small,34165.13,44241.63,56.4
+2024-12-22 05:20:19.238476952,North America,IoT Gateway,Software,Rep_001,4654.01,32,6.6,4.3,Small,2577.01,2077.0,44.6
+2024-12-23 16:26:56.032064128,Europe,Security Pro,Software,Rep_005,7668.19,28,28.8,4.5,Large,3869.75,3798.44,49.5
+2024-12-25 03:33:32.825651304,Europe,Cloud Platform,Services,Rep_008,2046.74,22,18.5,4.5,Large,1048.85,997.89,48.8
+2024-12-26 14:40:09.619238472,Europe,Cloud Platform,Software,Rep_013,8156.67,17,16.7,4.2,Small,4783.06,3373.61,41.4
+2024-12-28 01:46:46.412825648,North America,Enterprise Suite,Hardware,Rep_008,4578.62,59,12.5,4.8,Medium,2818.67,1759.95,38.4
+2024-12-29 12:53:23.206412824,Middle East,IoT Gateway,Services,Rep_011,7168.46,90,12.9,4.6,Small,3105.24,4063.22,56.7
+2024-12-31 00:00:00.000000000,Middle East,Security Pro,Services,Rep_001,13241.49,71,16.2,4.5,Large,5437.98,7803.51,58.9
