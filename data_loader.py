@@ -17,6 +17,7 @@ class DataLoader:
 
     TABULAR_EXTENSIONS = {"csv", "xlsx", "xls", "json"}
     DOCUMENT_EXTENSIONS = {"pdf", "docx", "txt"}
+    IMAGE_EXTENSIONS = {"png", "jpg", "jpeg"}
 
     @staticmethod
     def get_file_extension(filename: str) -> str:
@@ -32,6 +33,11 @@ class DataLoader:
     def is_document(cls, filename: str) -> bool:
         """Check whether a file is a document."""
         return cls.get_file_extension(filename) in cls.DOCUMENT_EXTENSIONS
+
+    @classmethod
+    def is_image(cls, filename: str) -> bool:
+        """Check whether a file is an image."""
+        return cls.get_file_extension(filename) in cls.IMAGE_EXTENSIONS
 
     # ── Tabular Data Loading ────────────────────────────────
 
@@ -118,6 +124,15 @@ class DataLoader:
             raise ValueError(f"Unsupported document format: {ext}")
         return loader(file_path)
 
+    # ── Image Loading ──────────────────────────────────────
+    @staticmethod
+    def load_image(file_path: str) -> str:
+        """
+        Process an image file. 
+        For now, returns a placeholder string. actual analysis happens in LLM engine.
+        """
+        return "[IMAGE_FILE]"
+
     # ── Unified Loader ──────────────────────────────────────
 
     @classmethod
@@ -142,6 +157,8 @@ class DataLoader:
             df = cls.load_tabular(save_path)
         elif cls.is_document(filename):
             doc_text = cls.load_document(save_path)
+        elif cls.is_image(filename):
+            doc_text = cls.load_image(save_path)
         else:
             raise ValueError(f"Unsupported file type: {filename}")
 

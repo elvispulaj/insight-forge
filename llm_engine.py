@@ -9,6 +9,7 @@ from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.messages import HumanMessage, SystemMessage
 
+import base64
 from config import Config
 
 
@@ -118,6 +119,12 @@ class LLMEngine:
         self.api_key = api_key or Config.OPENAI_API_KEY
         self.model = model or Config.OPENAI_MODEL
         self._llm = None
+    
+    @staticmethod
+    def _encode_image(image_path: str) -> str:
+        """Encode image to base64."""
+        with open(image_path, "rb") as image_file:
+            return base64.b64encode(image_file.read()).decode('utf-8')
 
     @property
     def llm(self) -> ChatOpenAI:
@@ -132,6 +139,25 @@ class LLMEngine:
         return self._llm
 
     # ── Analysis Methods ────────────────────────────────────
+
+    def analyze_image(self, image_path: str, prompt: str = "Analyze this business chart/image.") -> str:
+        """Analyze an image using the multimodal capabilities of the LLM."""
+        base64_image = self._encode_image(image_path)
+        
+        message = HumanMessage(
+            content=[
+                {"type": "text", "text": prompt},
+                {
+                    "type": "image_url",
+                    "image_url": {
+                        "url": f"data:image/jpeg;base64,{base64_image}"
+                    },
+                },
+            ]
+        )
+        
+        response = self.llm.invoke([SystemMessage(content=SYSTEM_PROMPT), message])
+        return response.content
 
     def analyze_data(self, data_context: str, rag_context: str = "") -> str:
         """Perform comprehensive data analysis."""

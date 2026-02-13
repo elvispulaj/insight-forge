@@ -16,6 +16,7 @@ from rag_engine import RAGEngine
 from llm_engine import LLMEngine
 from visualizer import Visualizer
 from sample_data import generate_sales_data, generate_hr_data, generate_marketing_data
+from streamlit_mic_recorder import mic_recorder
 
 # ── Page Configuration ──────────────────────────────────────
 
@@ -372,6 +373,54 @@ def render_user_header():
             """, unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════════
+# PAGE: Image Analysis Dashboard (New)
+# ══════════════════════════════════════════════════════════════
+
+def render_image_dashboard():
+    """Render the dashboard for Image Analysis mode."""
+    st.markdown('<div class="section-title"><div class="icon-circle"><i class="fa-solid fa-eye"></i></div>AI Vision Analysis</div>', unsafe_allow_html=True)
+    
+    file_path = os.path.join(Config.UPLOAD_DIR, st.session_state.file_name)
+    
+    if not os.path.exists(file_path):
+        st.error("Image file not found.")
+        return
+
+    col1, col2 = st.columns([1, 1])
+    
+    with col1:
+        st.markdown("### 🖼️ Source Image")
+        st.image(file_path, caption=st.session_state.file_name, use_container_width=True)
+        
+    with col2:
+        st.markdown("### 🤖 AI Insights")
+        
+        if 'image_analysis_result' not in st.session_state:
+            st.session_state.image_analysis_result = None
+            
+        if st.session_state.image_analysis_result:
+             st.markdown(st.session_state.image_analysis_result)
+             st.markdown("---")
+             if st.button("🔄 Re-Analyze", key="reanalyze_btn"):
+                 st.session_state.image_analysis_result = None
+                 st.rerun()
+        else:
+             st.info("I can 'see' this image and extract data, trends, and insights for you.")
+             if st.button("👁️ Analyze Image", type="primary", use_container_width=True):
+                 if not st.session_state.api_key_set:
+                     st.warning("Please configure OpenAI API Key first.")
+                 else:
+                     with st.spinner("🤖 Analyzing image contents... (this requires GPT-4o-mini Vision)"):
+                         try:
+                             # Prompt optimized for business charts
+                             prompt = "Analyze this business image. If it's a chart, extract the data trends. If it's a document/receipt, extract the key info. Provide a structured summary."
+                             result = st.session_state.llm_engine.analyze_image(file_path, prompt)
+                             st.session_state.image_analysis_result = result
+                             st.rerun()
+                         except Exception as e:
+                             st.error(f"Analysis failed: {e}")
+
+# ══════════════════════════════════════════════════════════════
 # PAGE: Dashboard
 # ══════════════════════════════════════════════════════════════
 
@@ -560,7 +609,7 @@ The feature your stakeholders want, but your engineering team hates building fro
     # Hero
     st.markdown("""
     <div class="hero-header">
-        <h1>🔥 Welcome to InsightForge</h1>
+        <h1><i class="fa-solid fa-chart-line" style="color: #2979FF; margin-right: 15px;"></i>Welcome to InsightForge</h1>
         <p>Transform your business data into actionable intelligence with AI-powered analysis</p>
     </div>
     """, unsafe_allow_html=True)
@@ -641,6 +690,12 @@ The feature your stakeholders want, but your engineering team hates building fro
         return
 
     # ── Data Loaded: Show Dashboard ─────────────────────────
+    
+    # Check for Image Mode
+    if st.session_state.get('doc_text') == "[IMAGE_FILE]":
+        render_image_dashboard()
+        return
+
     df = st.session_state.df
 
     if df is not None:
@@ -845,10 +900,88 @@ def render_qa():
             </div>
             """, unsafe_allow_html=True)
 
-    # Chat input
-    question = st.chat_input("Ask a question about your data...")
+    st.markdown("Ask any business question about your data in natural language.")
 
-    if question:
+    # ── Voice Input Section (Top) ──
+    voice_col1, voice_col2 = st.columns([1, 5])
+    with voice_col1:
+        st.markdown("**🎙️ Voice Input:**")
+        audio = mic_recorder(
+            start_prompt="Start Recording 🔴",
+            stop_prompt="Stop Recording ⏹️",
+            just_once=True,
+            key='voice_recorder_top'
+        )
+    
+    voice_text = None
+    if audio:
+        with st.spinner("🎧 Transcribing..."):
+            try:
+                import io
+                from openai import OpenAI
+                
+                audio_bytes = audio['bytes']
+                # Create a file-like object
+                audio_file = io.BytesIO(audio_bytes)
+                audio_file.name = "voice_input.wav"
+                
+                client = OpenAI(api_key=st.session_state.llm_engine.api_key)
+                transcript = client.audio.transcriptions.create(
+                    model="whisper-1", 
+                    file=audio_file,
+                    response_format="text"
+                )
+                voice_text = transcript
+                st.success(f"🗣️ You said: *{voice_text}*")
+                
+            except Exception as e:
+                st.error(f"Voice Error: {e}")
+
+    st.divider()
+
+    # Chat history display
+        
+    if audio:
+        with st.spinner("🎧 Transcribing..."):
+            try:
+                # Save audio to a temporary file
+                import io
+                audio_bytes = audio['bytes']
+                
+                # OpenAI Whisper API expects a file-like object with a name
+                # We can't send raw bytes directly to some versions of the SDK, 
+                # so we might need a temp file or a named BytesIO
+                from openai import OpenAI
+                client = OpenAI(api_key=st.session_state.llm_engine.api_key)
+                
+                # Create a file-like object
+                audio_file = io.BytesIO(audio_bytes)
+                audio_file.name = "voice_input.wav"
+                
+                transcript = client.audio.transcriptions.create(
+                    model="whisper-1", 
+                    file=audio_file,
+                    response_format="text"
+                )
+                
+                voice_text = transcript
+                
+            except Exception as e:
+                st.error(f"Voice Error: {e}")
+
+    # Standard Chat Input
+    text_input = st.chat_input("Ask a question about your data...")
+    
+    # Process Inputs
+    question_to_ask = None
+    if text_input:
+        question_to_ask = text_input
+    elif voice_text:
+        # Use the voice text captured from the top section
+        question_to_ask = voice_text
+    
+    if question_to_ask:
+        question = question_to_ask
         # Add user message
         st.session_state.chat_history.append({"role": "user", "content": question})
 

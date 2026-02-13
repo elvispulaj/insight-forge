@@ -2,6 +2,10 @@
 
 > Transform your business data into actionable insights with AI-powered analysis, natural language Q&A, and smart visualizations.
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://insight-forge-pxg4svykyquwmvlnwjvjnr.streamlit.app/)
+
+**[🚀 Live Demo](https://insight-forge-pxg4svykyquwmvlnwjvjnr.streamlit.app/)**
+
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.40-FF4B4B?logo=streamlit)
 ![LangChain](https://img.shields.io/badge/LangChain-0.3-green)
@@ -119,6 +123,10 @@ streamlit run app.py
 ```
 
 The app will open at `http://localhost:8501`.
+
+6. **Create an Account & Log In:**
+   - On the landing page, click **"Log in"** (top right) -> **"Create Account"**.
+   - **Note:** You must be logged in to access the dashboard and all features.
 
 ---
 

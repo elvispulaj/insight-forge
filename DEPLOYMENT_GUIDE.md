@@ -74,6 +74,7 @@ Once deployed, you will get a URL like:
 - **Send this link** to anyone.
 - They can open it on their phone or laptop.
 - Since standard Streamlit cloud apps are public, anyone with the link can view it.
+- **Important:** Users must create an account and log in to access the dashboard and features.
 
 ---
 

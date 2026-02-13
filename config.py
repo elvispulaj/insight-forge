@@ -27,7 +27,7 @@ class Config:
 
     # ── File Upload ─────────────────────────────────────────
     MAX_UPLOAD_SIZE_MB: int = int(os.getenv("MAX_UPLOAD_SIZE_MB", "200"))
-    ALLOWED_EXTENSIONS: list = ["csv", "xlsx", "xls", "pdf", "docx", "txt", "json"]
+    ALLOWED_EXTENSIONS: list = ["csv", "xlsx", "xls", "pdf", "docx", "txt", "json", "png", "jpg", "jpeg"]
 
     # ── Paths ───────────────────────────────────────────────
     BASE_DIR: str = os.path.dirname(os.path.abspath(__file__))
@@ -38,7 +38,7 @@ class Config:
 
     # ── Streamlit Page Config ───────────────────────────────
     PAGE_TITLE: str = "InsightForge BI Assistant"
-    PAGE_ICON: str = "🔥"
+    PAGE_ICON: str = "📊"
     LAYOUT: str = "wide"
 
     @classmethod
