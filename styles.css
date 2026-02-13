@@ -10,10 +10,30 @@ body,
 }
 
 /* ── Deep Dark Theme (#121212) ───────────────────────── */
+/* ── Deep Dark Theme (#121212) ───────────────────────── */
 .stApp {
-    background-color: #121212 !important;
-    background-image: radial-gradient(circle at 50% 0%, rgba(0, 229, 255, 0.05), transparent 60%) !important;
+    background-color: #050505 !important;
+    background-image:
+        radial-gradient(circle at 10% 20%, rgba(0, 78, 255, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(0, 229, 255, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(20, 20, 30, 0.5) 0%, transparent 60%) !important;
     background-attachment: fixed !important;
+    background-size: 150% 150%;
+    animation: gradient-flow 15s ease infinite;
+}
+
+@keyframes gradient-flow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* ── Sidebar (Deepest Dark) ──────────────────────────── */
@@ -124,7 +144,35 @@ section[data-testid="stSidebar"] {
     text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
 }
 
-/* ── Bento-Box Cards (Glassmorphism & Depth) ─────────── */
+/* ── Chat Interface (Glassmorphic Bubbles) ───────────── */
+/* User Message */
+div[data-testid="stChatMessage"]:nth-child(odd) {
+    background: linear-gradient(135deg, rgba(0, 114, 255, 0.15), rgba(0, 229, 255, 0.05));
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    border-radius: 20px 20px 0 20px;
+    backdrop-filter: blur(10px);
+    margin-left: auto;
+    /* Push to right */
+    max-width: 80%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* AI Message */
+div[data-testid="stChatMessage"]:nth-child(even) {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px 20px 20px 0;
+    backdrop-filter: blur(10px);
+    max-width: 80%;
+}
+
+/* Avatar Styling */
+div[data-testid="stChatMessageAvatar"] {
+    background-color: transparent !important;
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+}
+
 .insight-card,
 div[data-testid="stDataFrame"] {
     background-color: #1E1E1E;
@@ -267,13 +315,27 @@ div[data-testid="column"] {
 }
 
 /* Table / Dataframe Dark Mode */
-div[data-testid="stDataFrame"] {
+/* Table / Dataframe / Data Editor Dark Mode */
+div[data-testid="stDataFrame"],
+div[data-testid="stDataEditor"] {
     background-color: #1E1E1E;
     border: 1px solid #333333;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
-div[data-testid="stDataFrame"] * {
+div[data-testid="stDataFrame"] *,
+div[data-testid="stDataEditor"] * {
     color: #E0E0E0 !important;
+}
+
+/* Header Cells */
+div[data-testid="stDataFrame"] th,
+div[data-testid="stDataEditor"] th {
+    background-color: #252525 !important;
+    color: #00E5FF !important;
+    /* Cyan Headers */
+    border-bottom: 2px solid #333 !important;
 }
 
 /* ── Scrollbar ───────────────────────────────────────── */
