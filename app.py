@@ -74,16 +74,440 @@ with auth_col2:
 
 # ── Custom CSS ──────────────────────────────────────────────
 
-def local_css(file_name):
-    with open(file_name, encoding="utf-8") as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+# ── Custom CSS ──────────────────────────────────────────────
 
-# Force reload by adding a version number to the filename if checking externally, 
-# but here we read the file content directly so it should update on refresh.
-# To be doubly sure, we can inject a comment with a timestamp to force a change.
-import time
-st.markdown(f"<!-- CSS Updated: {time.time()} -->", unsafe_allow_html=True)
-local_css("styles.css")
+st.markdown("""
+<style>
+/* ── Global Font & Reset ──────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html,
+body,
+[class*="css"] {
+    font-family: 'Inter', sans-serif;
+    color: #E0E0E0;
+    /* Light Grey Text */
+}
+
+/* ── Deep Dark Theme (#121212) ───────────────────────── */
+.stApp {
+    background-color: #050505 !important;
+    background-image:
+        radial-gradient(circle at 10% 20%, rgba(0, 78, 255, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(0, 229, 255, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(20, 20, 30, 0.5) 0%, transparent 60%) !important;
+    background-attachment: fixed !important;
+    background-size: 150% 150%;
+    animation: gradient-flow 15s ease infinite;
+}
+
+@keyframes gradient-flow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ── Sidebar (Deepest Dark) ──────────────────────────── */
+section[data-testid="stSidebar"] {
+    background-color: #0A0A0A !important;
+    /* Almost Black */
+    border-right: 1px solid #222222;
+}
+
+/* BRAND TYPOGRAPHY & LOGO */
+.sidebar-brand {
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.brand-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.brand-logo i {
+    font-size: 3rem;
+    /* Larger */
+    /* Electric Blue Gradient matching the image */
+    background: linear-gradient(135deg, #00E5FF 0%, #2979FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 15px rgba(0, 229, 255, 0.4));
+    /* Strong Glow */
+    animation: float-logo 4s ease-in-out infinite;
+}
+
+@keyframes float-logo {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+}
+
+.sidebar-brand h2 {
+    color: #FFFFFF !important;
+    font-size: 1.8rem !important;
+    font-weight: 800 !important;
+    margin-bottom: 0.2rem !important;
+    letter-spacing: -0.5px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar-brand p {
+    color: #00E5FF !important;
+    /* Electric Cyan */
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    margin-top: 0 !important;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+}
+
+/* NAVIGATION LINKS (Premium Glassmorphism) */
+.stRadio>div[role="radiogroup"]>label {
+    padding: 14px 16px !important;
+    margin-bottom: 10px !important;
+    border-radius: 16px;
+    /* Softer corners */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    background: rgba(255, 255, 255, 0.02) !important;
+    cursor: pointer !important;
+}
+
+/* Hover Effect (Exact match to Home Page Cards: Lift & Glow) */
+.stRadio>div[role="radiogroup"]>label:hover {
+    background: linear-gradient(145deg, rgba(0, 229, 255, 0.1), rgba(0, 114, 255, 0.05)) !important;
+    border-color: rgba(0, 229, 255, 0.4) !important;
+    transform: translateY(-3px) !important;
+    /* Lift UP like cards */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.stRadio>div[role="radiogroup"]>label p {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    color: #B0BEC5 !important;
+}
+
+/* ACTIVE STATE (Glowing Blue) */
+.stRadio>div[role="radiogroup"]>label[data-checked="true"] {
+    background: linear-gradient(90deg, rgba(0, 114, 255, 0.2) 0%, rgba(0, 229, 255, 0.1) 100%) !important;
+    border: 1px solid rgba(0, 229, 255, 0.5) !important;
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.15);
+}
+
+.stRadio>div[role="radiogroup"]>label[data-checked="true"] p {
+    color: #FFFFFF !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+
+/* ── Chat Interface (Glassmorphic Bubbles) ───────────── */
+/* User Message */
+div[data-testid="stChatMessage"]:nth-child(odd) {
+    background: linear-gradient(135deg, rgba(0, 114, 255, 0.15), rgba(0, 229, 255, 0.05));
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    border-radius: 20px 20px 0 20px;
+    backdrop-filter: blur(10px);
+    margin-left: auto;
+    /* Push to right */
+    max-width: 80%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* AI Message */
+div[data-testid="stChatMessage"]:nth-child(even) {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px 20px 20px 0;
+    backdrop-filter: blur(10px);
+    max-width: 80%;
+}
+
+/* Avatar Styling */
+div[data-testid="stChatMessageAvatar"] {
+    background-color: transparent !important;
+    border: 1px solid rgba(0, 229, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+}
+
+.insight-card,
+div[data-testid="stDataFrame"] {
+    background-color: #1E1E1E;
+    /* Dark Card Surface */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    /* Soft Corners */
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    /* Deep Shadow */
+    backdrop-filter: blur(10px);
+}
+
+/* ── KPI Cards (Statistics Widgets) ──────────────────── */
+.kpi-card {
+    background: linear-gradient(145deg, #1E1E1E, #252525);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.kpi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 229, 255, 0.1);
+    border-color: rgba(0, 229, 255, 0.3);
+}
+
+/* Inner Glow Effect */
+.kpi-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.kpi-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #9E9E9E;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    z-index: 1;
+}
+
+.kpi-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    z-index: 1;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.kpi-icon {
+    font-size: 1.5rem;
+    color: #00E5FF;
+    /* Cyan Icon */
+    margin-bottom: 0.5rem;
+    z-index: 1;
+    filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.4));
+}
+
+/* ── Buttons (Neon & Sleek) ──────────────────────────── */
+.stButton>button {
+    border-radius: 12px !important;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+
+/* Primary: Cobalt Blue to Cyan Gradient */
+/* Primary: Purple-Blue Gradient (User Request) */
+/* Primary: Electric Blue Gradient (No Purple) */
+button[kind="primary"] {
+    background: linear-gradient(90deg, #00C6FF 0%, #0072FF 100%) !important;
+    border: none !important;
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
+}
+
+/* Ensure text stays white */
+button[kind="primary"] p,
+button[kind="primary"] span,
+button[kind="primary"] div {
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+}
+
+button[kind="primary"]:hover {
+    box-shadow: 0 0 25px rgba(0, 114, 255, 0.6);
+    transform: scale(1.02);
+    color: #FFFFFF !important;
+}
+
+/* Secondary: Ghost Outline */
+button[kind="secondary"] {
+    background: transparent;
+    border: 1px solid #424242;
+    color: #E0E0E0;
+}
+
+button[kind="secondary"]:hover {
+    border-color: #00E5FF;
+    color: #00E5FF;
+    background: rgba(0, 229, 255, 0.05);
+}
+
+/* ── Inputs (Deep Dark) ──────────────────────────────── */
+.stTextInput>div>div>input,
+.stSelectbox>div>div>div,
+.stTextArea>div>div>textarea {
+    background-color: #000000;
+    border: 1px solid #333333;
+    border-radius: 12px;
+    color: #FFFFFF;
+}
+
+.stTextInput input:focus,
+.stTextArea textarea:focus {
+    border-color: #00E5FF !important;
+    box-shadow: 0 0 0 1px #00E5FF;
+}
+
+/* ── Dashboard Layout Tweaks ─────────────────────────── */
+div[data-testid="column"] {
+    /* Spacing between bento items */
+    padding: 0.2rem;
+}
+
+/* Table / Dataframe / Data Editor Dark Mode */
+div[data-testid="stDataFrame"],
+div[data-testid="stDataEditor"] {
+    background-color: #1E1E1E;
+    border: 1px solid #333333;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+div[data-testid="stDataFrame"] *,
+div[data-testid="stDataEditor"] * {
+    color: #E0E0E0 !important;
+}
+
+/* Header Cells */
+div[data-testid="stDataFrame"] th,
+div[data-testid="stDataEditor"] th {
+    background-color: #252525 !important;
+    color: #00E5FF !important;
+    /* Cyan Headers */
+    border-bottom: 2px solid #333 !important;
+}
+
+/* ── Scrollbar ───────────────────────────────────────── */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00E5FF;
+}
+
+/* ── Utilities ───────────────────────────────────────── */
+.section-title {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 3rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Header/Footer Cleanup */
+footer,
+#MainMenu {
+    visibility: hidden;
+}
+
+header[data-testid="stHeader"] {
+    background: transparent !important;
+}
+
+
+/* ══════════════════════════════════════════════════════════════
+   PREMIUM ICON SYSTEM (Global)
+   ══════════════════════════════════════════════════════════════ */
+
+.icon-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-right: 15px;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.icon-circle:hover {
+    background-color: #00E5FF;
+    /* Cyan accent on hover */
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Page Section Titles */
+.section-title {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 1.5rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    /* Alignment handles by flex */
+}
+
+/* Feature Grid (Reusable for Dashboard) */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.dashboard-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    border-color: #00E5FF;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+}
+</style>
+""", unsafe_allow_html=True)
 
 
 # ── Session State Initialization ────────────────────────────
