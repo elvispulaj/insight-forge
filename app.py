@@ -35,7 +35,7 @@ if 'show_login_page' not in st.session_state:
     st.session_state['show_login_page'] = False
 
 from auth import render_login_page
-from profile import render_profile_page, load_profile
+from profile import render_profile_page, load_profile, save_profile
 
 # 1. If user wants to see login page, show it and stop
 if st.session_state['show_login_page']:
@@ -195,9 +195,12 @@ def render_sidebar():
 
         # Check for persistent key in profile
         default_api_key = ""
+        profile_api_key = ""
+        
         if 'username' in st.session_state and st.session_state.username:
              user_profile = load_profile(st.session_state.username)
-             default_api_key = user_profile.get("openai_api_key", "")
+             profile_api_key = user_profile.get("openai_api_key", "")
+             default_api_key = profile_api_key
         
         if not default_api_key and Config.is_api_key_set():
              default_api_key = Config.OPENAI_API_KEY
@@ -214,6 +217,19 @@ def render_sidebar():
             st.session_state.api_key_set = True
             if st.session_state.llm_engine is None or st.session_state.llm_engine.api_key != api_key:
                 st.session_state.llm_engine = LLMEngine(api_key=api_key)
+            
+            # ── Auto-Save Key to Profile ──
+            if 'username' in st.session_state and st.session_state.username:
+                # Save if it's different from what's currently stored in the profile
+                if api_key != profile_api_key:
+                    try:
+                        current_profile = load_profile(st.session_state.username)
+                        current_profile['openai_api_key'] = api_key
+                        save_profile(st.session_state.username, current_profile)
+                        st.toast("API Key saved to your profile!", icon="💾")
+                    except Exception as e:
+                        print(f"Failed to auto-save API key: {e}")
+
             st.markdown('<span class="status-badge status-connected">● AI Connected</span>', unsafe_allow_html=True)
         else:
             st.session_state.api_key_set = False
