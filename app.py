@@ -454,13 +454,22 @@ def render_dashboard():
         st.markdown("""
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
             <style>
-                /* Deep Blue Aurora Background (No Purple) */
+                /* Deep Blue Aurora Background (No Purple) - Animated */
                 .stApp {
-                    background-color: #02040a !important;
+                    background-color: #050505 !important;
                     background-image: 
-                        radial-gradient(circle at 15% 50%, rgba(0, 100, 255, 0.15) 0%, transparent 50%),
-                        radial-gradient(circle at 85% 30%, rgba(0, 229, 255, 0.15) 0%, transparent 50%),
-                        radial-gradient(circle at 50% 0%, rgba(41, 121, 255, 0.1) 0%, transparent 50%) !important;
+                        radial-gradient(circle at 10% 20%, rgba(0, 78, 255, 0.15) 0%, transparent 40%),
+                        radial-gradient(circle at 90% 80%, rgba(0, 229, 255, 0.1) 0%, transparent 40%),
+                        radial-gradient(circle at 50% 50%, rgba(20, 20, 30, 0.5) 0%, transparent 60%) !important;
+                    background-attachment: fixed !important;
+                    background-size: 150% 150%;
+                    animation: gradient-flow 15s ease infinite;
+                }
+                
+                @keyframes gradient-flow {
+                    0% { background-position: 0% 50%; }
+                    50% { background-position: 100% 50%; }
+                    100% { background-position: 0% 50%; }
                 }
                 
                 .landing-container {
